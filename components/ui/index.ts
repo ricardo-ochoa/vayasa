@@ -1,3 +1,5 @@
 export * from './Navbar'
 export * from './Footer'
 export * from './SideMenu'
+export * from './Nosotros'
+export * from './Industrias'

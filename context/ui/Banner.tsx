@@ -1,5 +1,5 @@
 import {useState, useEffect, FC} from 'react'
-import { Box, Typography, Button, Link } from '@mui/material'
+import { Box, Typography, Button, Link, CardActions, CardContent, CardMedia, CardActionArea } from '@mui/material'
 
 // const imageArray = ['https://res.cloudinary.com/dfmfxdkx4/image/upload/v1659715889/web/pricesas_ho9bvk.jpg',
 // 'https://res.cloudinary.com/dfmfxdkx4/image/upload/v1659384131/web/dino_desktop_ygkqdf.jpg',
@@ -54,32 +54,39 @@ export const Banner:FC<Props> = ({ imageMobile, image  }) => {
           justifyContent={'center'}
           sx={{
             alignItems:{sm:'flex-start', md:'center'},
-  
+            
            }}
           >
 
             <Box width='100%'>
               { mobile
                 ?
-                <Box height='800px'>
-                  <img
+                <Box>
+                  <CardActionArea >
+                  <CardMedia
+                  
+                  component="img"
                   src={ imageMobile }
                   alt="Girl in a jacket"
                   style={{objectFit:"cover"}}
                   width='100%'
-                  height='90%'
                       >
-                  </img>
+                  </CardMedia>
+                </CardActionArea>
                 </Box>
                 :
                 <Box>
-                    <img
-                width='100%'
-                src={ image }
-                alt="Show infantil"
-                style={{boxSizing:"content-box"}}
-                />
-                
+                  <CardActionArea >
+                  <CardMedia
+                    component="img"
+                    src={ image }
+                    alt="Girl in a jacket"
+                    style={{objectFit:"cover"}}
+                    width='100%'
+                    height='100%'
+                >
+                </CardMedia>
+                </CardActionArea>
                 </Box>
               }
             </Box>
