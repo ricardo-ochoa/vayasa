@@ -20,7 +20,15 @@ a {
     color-scheme: dark;
   }
   body {
-    color: white;
-    background: black;
+    color: #002E8F;
+    background: rgb(255, 255, 255);
   }
+}
+
+.cls-1{
+  fill:#002E8F
+}
+
+.cls-2{
+  fill:#fff
 }
