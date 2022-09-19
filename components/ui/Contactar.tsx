@@ -21,11 +21,10 @@ export const Contactar = () => {
     // }
 
   return (
-    <div id='contacto'>
+    <Box id='contacto'     pt={ 10 }>
+    <img src="https://res.cloudinary.com/dnxxkvpiz/image/upload/v1663620484/VAYASA/contactimg_byevvd.jpg" alt="oil and gas" style={{ height:"300px", width:"100%", objectFit:'cover' }} />
     <Grid
-    pt={ 20 }
-
-    mt={ 10 }
+    mt={ 4 }
     mb={ 10 }
     p={ 2 }
     container  
@@ -117,7 +116,7 @@ export const Contactar = () => {
         </Grid>
 
     </Grid>
-    </div>
+    </Box>
   )
 }
 
