@@ -31,7 +31,7 @@ export const SideMenu = () => {
             <List>
 
                 <ListItem button
-                 onClick={ () => navigateTo('/industrias')}>
+                 onClick={ () => navigateTo('#industrias')}>
                     <ListItemIcon>
                         <FactoryTwoToneIcon />
                     </ListItemIcon>
@@ -39,7 +39,7 @@ export const SideMenu = () => {
                 </ListItem>
 
                 <ListItem button
-                onClick={ () => navigateTo('/nosotros')}
+                onClick={ () => navigateTo('#nosotros')}
                 >
                     <ListItemIcon>
                         <Diversity1TwoToneIcon/>
@@ -48,7 +48,7 @@ export const SideMenu = () => {
                 </ListItem>
 
                 <ListItem button
-                onClick={ () => navigateTo('/contacto')}
+                onClick={ () => navigateTo('#contacto')}
                 >
                     <ListItemIcon>
                         <ContactPhoneTwoToneIcon />

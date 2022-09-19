@@ -4,6 +4,9 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  color: #002E8F;
+  background: rgb(255, 255, 255);
+  scroll-behavior: smooth;
 }
 
 a {
@@ -31,4 +34,8 @@ a {
 
 .cls-2{
   fill:#fff
+}
+
+.main{
+  scroll-behavior: smooth;
 }

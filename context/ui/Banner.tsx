@@ -1,5 +1,6 @@
 import {useState, useEffect, FC} from 'react'
 import { Box, Typography, Button, Link, CardActions, CardContent, CardMedia, CardActionArea } from '@mui/material'
+import { useRouter } from 'next/router'
 
 // const imageArray = ['https://res.cloudinary.com/dfmfxdkx4/image/upload/v1659715889/web/pricesas_ho9bvk.jpg',
 // 'https://res.cloudinary.com/dfmfxdkx4/image/upload/v1659384131/web/dino_desktop_ygkqdf.jpg',
@@ -46,6 +47,12 @@ export const Banner:FC<Props> = ({ imageMobile, image  }) => {
       window.removeEventListener('resize', updateMobile)
     }
   }, [])
+
+  const router = useRouter();
+
+  const navigateTo = ( url: string ) => {
+    router.push(url)
+  }
   
   return (
     <>
@@ -62,7 +69,7 @@ export const Banner:FC<Props> = ({ imageMobile, image  }) => {
               { mobile
                 ?
                 <Box>
-                  <CardActionArea >
+                  <CardActionArea  onClick={ () => navigateTo('#nosotros')}>
                   <CardMedia
                   
                   component="img"
@@ -76,7 +83,7 @@ export const Banner:FC<Props> = ({ imageMobile, image  }) => {
                 </Box>
                 :
                 <Box>
-                  <CardActionArea >
+                  <CardActionArea onClick={ () => navigateTo('#nosotros')}>
                   <CardMedia
                     component="img"
                     src={ image }

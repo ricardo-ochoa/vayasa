@@ -3,15 +3,15 @@ import DoneTwoToneIcon from '@mui/icons-material/DoneTwoTone';
 
 export const Nosotros = () => {
   return (
-    <>
-      <Grid mt={ 12 }>
+    <section id='nosotros'>
+      <Grid mt={ 12 } >
         <Typography variant='h2' textAlign='center' fontWeight='800'>Nosotros</Typography>
       </Grid>
       
       <Grid container  flexDirection="row" padding={ 2 } spacing={ 4 }>
 
         <Grid item xs={ 12 } md={ 6 } mt={ 5 }>
-          <Typography variant='h4' fontWeight='500'>Valores</Typography>
+          <Typography variant='h4' fontWeight='500'>Visión</Typography>
           <Typography mt={ 2 }>Estamos convencidos de que a través de la ingeniería y la innovación tecnológica, se promueven entornos de negocios más competitivos y se logran resultados que crean un futuro más sustentable para el beneficio de todos.</Typography>
         </Grid>
 
@@ -58,6 +58,6 @@ export const Nosotros = () => {
       
 
       </Grid>
-    </>
+    </section>
   )
 }
