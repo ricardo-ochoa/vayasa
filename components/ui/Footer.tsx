@@ -4,12 +4,12 @@ import NextLink from 'next/link'
 
 export const Footer = () => {
   return (
-        <Box display='flex' width='100%' >
-
-            <Box display='flex'  width='70%' >
-            <Toolbar  sx={{ width:"100%" , 
+        <Box width='100%' >
+            <Toolbar  sx={{ width:"100%" ,
+                            zIndex:'999',
+                            position:'absolute',
                             alignContent:'center',
-                            backgroundColor:'#002E8E',
+                            paddingTop:'1.3rem',
                             display:'flex',
                             flexDirection:{xs:'row', md:'row'},
                             textAlign:{xs:'center', md:'right'}
@@ -31,12 +31,14 @@ export const Footer = () => {
                 </NextLink>
 
                 <Typography color='#fff' variant='subtitle2' sx={{marginLeft:"1rem",marginTop:{xs:'0rem', md:'0'}}}>© 2022 Industrias VAYASA, S. de R.L. de C.V.</Typography>
-            </Toolbar>
-            </Box>   
+            </Toolbar> 
 
-            <Box width='20%' sx={{ backgroundColor:'#75C7FB'}}></Box>
-            <Box width='10%'  sx={{ backgroundColor:'#FE8E2F'}}></Box>
-
+            <Box display='flex' width="100%" height="80px">
+                <Box width='70%'  sx={{ alignContent:'center', backgroundColor:'#002E8E' }}></Box>  
+                <Box width='20%' sx={{ backgroundColor:'#75C7FB'}}></Box>
+                <Box width='10%'  sx={{ backgroundColor:'#FE8E2F'}}></Box>
+            </Box>
+            
         </Box>
   )
 }
