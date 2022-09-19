@@ -16,7 +16,7 @@ class MyDocument extends Document {
                 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 
                 </Head>
-                <body>
+                <body style={{ color: '#002e8f' }}>
                     <Main />
                     <NextScript />
                 </body>

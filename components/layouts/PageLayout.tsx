@@ -52,6 +52,7 @@ export const PageLayout:FC<Props> = ({ children, title, pageDescription, imageFu
             marginTop: '70px',
             maxWidth: '1200px',
             padding: '0',
+            color: "#002e8f"
         }}>
             { children }
         </main>
