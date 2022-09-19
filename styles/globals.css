@@ -18,15 +18,7 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: #002E8F;
-    background: rgb(255, 255, 255);
-  }
-}
+
 
 .cls-1{
   fill:#002E8F

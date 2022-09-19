@@ -3,7 +3,7 @@ import DoneTwoToneIcon from '@mui/icons-material/DoneTwoTone';
 
 export const Mantenimiento = () => {
   return (
-    <Box mt={ 14 } id='mantenimiento'>
+    <Box pt={ 14 } id='mantenimiento'>
     <img src="https://res.cloudinary.com/dnxxkvpiz/image/upload/v1663600281/VAYASA/mantenimiento_iehh6i.jpg" alt="oil and gas" style={{ height:"300px", width:"100%", objectFit:'cover' }} />
     <Typography variant='h3' fontWeight='800' textAlign='center' mb={4} mt={ 2 } >Mantenimiento</Typography>
     

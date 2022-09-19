@@ -3,7 +3,7 @@ import type { NextPage } from 'next'
 
 
 import { PageLayout } from '../components/layouts/PageLayout'
-import { Industrias, Mantenimiento, Nosotros, Oil, Comercializacion } from '../components/ui'
+import { Industrias, Mantenimiento, Nosotros, Oil, Comercializacion, Contactar } from '../components/ui'
 import { Banner } from '../context'
 
 
@@ -16,6 +16,8 @@ const Home: NextPage = () => {
       <Oil />
       <Mantenimiento />
       <Comercializacion />
+
+      <Contactar />
 
    </PageLayout>
   )

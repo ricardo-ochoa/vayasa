@@ -12,7 +12,7 @@ export const Industrias = () => {
   
   return (
     <section id='industrias'>
-      <Grid mt={ 12 }>
+      <Grid pt={ 12 }>
         <Typography variant='h2' textAlign='center' fontWeight='800'>Nuestras Industrias</Typography>
       </Grid>
       
