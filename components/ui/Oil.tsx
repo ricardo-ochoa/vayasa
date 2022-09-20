@@ -5,7 +5,7 @@ import Image from 'next/image';
 export const Oil = () => {
   return (
     <Box pt={ 10 } id='oil'>
-    <Image src="https://res.cloudinary.com/dnxxkvpiz/image/upload/v1663391388/VAYASA/oil_clg5v7.jpg" alt="oil and gas" style={{ height:"300px", width:"100%", objectFit:'cover' }} />
+    <CardMedia component="img" src="https://res.cloudinary.com/dnxxkvpiz/image/upload/v1663391388/VAYASA/oil_clg5v7.jpg" alt="oil and gas" style={{ height:"300px", width:"100%", objectFit:'cover' }} />
     <Typography variant='h3' fontWeight='800' textAlign='center' mb={4}  mt={ 2 }>Oil & Gas</Typography>
     
     <Grid container  flexDirection="row" padding={ 2 } spacing={ 4 }>

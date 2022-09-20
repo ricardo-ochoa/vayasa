@@ -1,7 +1,7 @@
-import { Grid, Typography, TextField, Box, Button } from '@mui/material'
+import { Grid, Typography, TextField, Box, Button, CardMedia } from '@mui/material'
 import PhoneIcon from '@mui/icons-material/Phone';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
-import Image from 'next/image';
+import MarkEmailReadIcon from '@mui/icons-material/MarkEmailRead';
 
 import { ValidationError, useForm } from '@formspree/react';
 
@@ -48,13 +48,21 @@ export const Contactar = () => {
                                     Calle Hicotea edificio 13, depto. 103 multi 83, Tabasco 2000, C.P. 86035, Villahermosa, Tab. 
                                     </Typography> </a></Box>
                             </Box>
+                            <Box mt={ 4 }>
+                                <Typography component='h5' variant='h6' fontWeight={800} sx={{ marginBottom: 3 }}> Email: </Typography>
+                                <Box display='flex' flexDirection='row'> <MarkEmailReadIcon />
+                                <a href='mailto:contacto@industriasvayasa.com'>
+                                    <Typography ml={ 2 } mb={ 1 } component='h5' variant='h6'  sx={{ color:'#000' }}> 
+                                    contacto@industriasvayasa.com 
+                                    </Typography> </a></Box>
+                            </Box>
                         </Grid>
       </Grid>
     }
 
   return (
     <Box id='contacto' pt={ 10 }>
-    <Image src="https://res.cloudinary.com/dnxxkvpiz/image/upload/v1663620484/VAYASA/contactimg_byevvd.jpg" alt="oil and gas" style={{ height:"300px", width:"100%", objectFit:'cover' }} />
+    <CardMedia component="img" src="https://res.cloudinary.com/dnxxkvpiz/image/upload/v1663620484/VAYASA/contactimg_byevvd.jpg" alt="oil and gas" style={{ height:"300px", width:"100%", objectFit:'cover' }} />
     
         <Grid
         mt={ 0 }
@@ -159,6 +167,14 @@ export const Contactar = () => {
                     <a href='https://goo.gl/maps/SMcStjacTNjXdS1U8' target="_blank" rel="noreferrer">
                         <Typography ml={ 2 } mb={ 1 } component='h5' variant='h6'  sx={{ color:'#000' }}> 
                         Calle Hicotea edificio 13, depto. 103 multi 83, Tabasco 2000, C.P. 86035, Villahermosa, Tab. 
+                        </Typography> </a></Box>
+                </Box>
+                <Box mt={ 4 }>
+                    <Typography component='h5' variant='h6' fontWeight={800} sx={{ marginBottom: 3 }}> Email: </Typography>
+                    <Box display='flex' flexDirection='row'> <MarkEmailReadIcon />
+                    <a href='mailto:contacto@industriasvayasa.com'>
+                        <Typography ml={ 2 } mb={ 1 } component='h5' variant='h6'  sx={{ color:'#000' }}> 
+                        contacto@industriasvayasa.com 
                         </Typography> </a></Box>
                 </Box>
             </Grid>
