@@ -1,10 +1,11 @@
 import { Grid, Typography, List, ListItem, ListItemText, CardMedia, Box } from '@mui/material'
 import DoneTwoToneIcon from '@mui/icons-material/DoneTwoTone';
+import Image from 'next/image';
 
 export const Mantenimiento = () => {
   return (
     <Box pt={ 14 } id='mantenimiento'>
-    <img src="https://res.cloudinary.com/dnxxkvpiz/image/upload/v1663600281/VAYASA/mantenimiento_iehh6i.jpg" alt="oil and gas" style={{ height:"300px", width:"100%", objectFit:'cover' }} />
+    <Image src="https://res.cloudinary.com/dnxxkvpiz/image/upload/v1663600281/VAYASA/mantenimiento_iehh6i.jpg" alt="oil and gas" style={{ height:"300px", width:"100%", objectFit:'cover' }} />
     <Typography variant='h3' fontWeight='800' textAlign='center' mb={4} mt={ 2 } >Mantenimiento</Typography>
     
     <Grid container  flexDirection="row" padding={ 2 } spacing={ 4 }>

@@ -1,6 +1,7 @@
 import { Grid, Typography, TextField, Box, Button } from '@mui/material'
 import PhoneIcon from '@mui/icons-material/Phone';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
+import Image from 'next/image';
 
 import { ValidationError, useForm } from '@formspree/react';
 
@@ -42,7 +43,10 @@ export const Contactar = () => {
                             </Box>
                             <Box mt={ 4 }>
                                 <Typography component='h5' variant='h6' fontWeight={800} sx={{ marginBottom: 3 }}> Dirección: </Typography>
-                                <Box display='flex' flexDirection='row'> <LocationOnIcon /> <a href='https://goo.gl/maps/SMcStjacTNjXdS1U8' target="_blank" ><Typography ml={ 2 } mb={ 1 } component='h5' variant='h6'  sx={{ color:'#000' }}> Calle Hicotea edificio 13, depto. 103 multi 83, Tabasco 2000, C.P. 86035, Villahermosa, Tab. </Typography> </a></Box>
+                                <Box display='flex' flexDirection='row'> <LocationOnIcon /> <a href='https://goo.gl/maps/SMcStjacTNjXdS1U8' target="_blank" rel="noreferrer">
+                                    <Typography ml={ 2 } mb={ 1 } component='h5' variant='h6'  sx={{ color:'#000' }}> 
+                                    Calle Hicotea edificio 13, depto. 103 multi 83, Tabasco 2000, C.P. 86035, Villahermosa, Tab. 
+                                    </Typography> </a></Box>
                             </Box>
                         </Grid>
       </Grid>
@@ -50,7 +54,7 @@ export const Contactar = () => {
 
   return (
     <Box id='contacto' pt={ 10 }>
-    <img src="https://res.cloudinary.com/dnxxkvpiz/image/upload/v1663620484/VAYASA/contactimg_byevvd.jpg" alt="oil and gas" style={{ height:"300px", width:"100%", objectFit:'cover' }} />
+    <Image src="https://res.cloudinary.com/dnxxkvpiz/image/upload/v1663620484/VAYASA/contactimg_byevvd.jpg" alt="oil and gas" style={{ height:"300px", width:"100%", objectFit:'cover' }} />
     
         <Grid
         mt={ 0 }
@@ -152,7 +156,7 @@ export const Contactar = () => {
                 <Box mt={ 4 }>
                     <Typography component='h5' variant='h6' fontWeight={800} sx={{ marginBottom: 3 }}> Dirección: </Typography>
                     <Box display='flex' flexDirection='row'> <LocationOnIcon />
-                    <a href='https://goo.gl/maps/SMcStjacTNjXdS1U8' target="_blank" >
+                    <a href='https://goo.gl/maps/SMcStjacTNjXdS1U8' target="_blank" rel="noreferrer">
                         <Typography ml={ 2 } mb={ 1 } component='h5' variant='h6'  sx={{ color:'#000' }}> 
                         Calle Hicotea edificio 13, depto. 103 multi 83, Tabasco 2000, C.P. 86035, Villahermosa, Tab. 
                         </Typography> </a></Box>
