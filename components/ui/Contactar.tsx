@@ -38,11 +38,11 @@ export const Contactar = () => {
                         md={ 6 }>
                             <Box>
                                 <Typography component='h5' variant='h6' fontWeight={800} sx={{ marginBottom: 3 }}> Teléfono: </Typography>
-                                <Box display='flex' flexDirection='row'> <PhoneIcon /> <a href='tel:993 202 1992'><Typography ml={ 2 } mb={ 1 } component='h5' variant='h6'  sx={{ color:'#000' }}> 993 202 1992 </Typography> </a></Box>
+                                <Box display='flex' flexDirection='row'> <PhoneIcon /> <a href='tel:993 187 1102'><Typography ml={ 2 } mb={ 1 } component='h5' variant='h6'  sx={{ color:'#000' }}> 993 187 1102 </Typography> </a></Box>
                             </Box>
                             <Box mt={ 4 }>
                                 <Typography component='h5' variant='h6' fontWeight={800} sx={{ marginBottom: 3 }}> Dirección: </Typography>
-                                <Box display='flex' flexDirection='row'> <LocationOnIcon /> <a href='https://goo.gl/maps/4NCs7tG9UD9NLVS69' target="_blank" ><Typography ml={ 2 } mb={ 1 } component='h5' variant='h6'  sx={{ color:'#000' }}> Boulevard Adolfo Ruiz Cortines 1344-Piso 2, Atasta de Serra, 86035 Villahermosa, Tab. </Typography> </a></Box>
+                                <Box display='flex' flexDirection='row'> <LocationOnIcon /> <a href='https://goo.gl/maps/SMcStjacTNjXdS1U8' target="_blank" ><Typography ml={ 2 } mb={ 1 } component='h5' variant='h6'  sx={{ color:'#000' }}> Calle Hicotea edificio 13, depto. 103 multi 83, Tabasco 2000, C.P. 86035, Villahermosa, Tab. </Typography> </a></Box>
                             </Box>
                         </Grid>
       </Grid>
@@ -53,7 +53,7 @@ export const Contactar = () => {
     <img src="https://res.cloudinary.com/dnxxkvpiz/image/upload/v1663620484/VAYASA/contactimg_byevvd.jpg" alt="oil and gas" style={{ height:"300px", width:"100%", objectFit:'cover' }} />
     
         <Grid
-        mt={ 4 }
+        mt={ 0 }
         mb={ 10 }
         p={ 2 }
         container spacing={ 6 }
@@ -147,11 +147,15 @@ export const Contactar = () => {
             md={ 6 }>
                 <Box>
                     <Typography component='h5' variant='h6' fontWeight={800} sx={{ marginBottom: 3 }}> Teléfono: </Typography>
-                    <Box display='flex' flexDirection='row'> <PhoneIcon /> <a href='tel:993 202 1992'><Typography ml={ 2 } mb={ 1 } component='h5' variant='h6'  sx={{ color:'#000' }}> 993 202 1992 </Typography> </a></Box>
+                    <Box display='flex' flexDirection='row'> <PhoneIcon /> <a href='tel:993 187 1102'><Typography ml={ 2 } mb={ 1 } component='h5' variant='h6'  sx={{ color:'#000' }}> 993 187 1102 </Typography> </a></Box>
                 </Box>
                 <Box mt={ 4 }>
                     <Typography component='h5' variant='h6' fontWeight={800} sx={{ marginBottom: 3 }}> Dirección: </Typography>
-                    <Box display='flex' flexDirection='row'> <LocationOnIcon /> <a href='https://goo.gl/maps/4NCs7tG9UD9NLVS69' target="_blank" ><Typography ml={ 2 } mb={ 1 } component='h5' variant='h6'  sx={{ color:'#000' }}> Boulevard Adolfo Ruiz Cortines 1344-Piso 2, Atasta de Serra, 86035 Villahermosa, Tab. </Typography> </a></Box>
+                    <Box display='flex' flexDirection='row'> <LocationOnIcon />
+                    <a href='https://goo.gl/maps/SMcStjacTNjXdS1U8' target="_blank" >
+                        <Typography ml={ 2 } mb={ 1 } component='h5' variant='h6'  sx={{ color:'#000' }}> 
+                        Calle Hicotea edificio 13, depto. 103 multi 83, Tabasco 2000, C.P. 86035, Villahermosa, Tab. 
+                        </Typography> </a></Box>
                 </Box>
             </Grid>
         </Grid>
