@@ -56,12 +56,12 @@ export const Banner:FC<Props> = ({ imageMobile, image  }) => {
   
   return (
     <>
-          <Box width="100%"
+          <Box 
           display={'flex'}
           justifyContent={'center'}
           sx={{
             alignItems:{sm:'flex-start', md:'center'},
-            marginBottom:"5rem"
+            marginBottom:"4rem"
            }}
           >
 
