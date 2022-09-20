@@ -1,7 +1,8 @@
 import { Grid, Typography, TextField, Box, Button } from '@mui/material'
-import React from 'react'
+import PhoneIcon from '@mui/icons-material/Phone';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
 
-// import { ValidationError, useForm } from '@formspree/react';
+import { ValidationError, useForm } from '@formspree/react';
 
 const handleContactUsRedirect = () => {
     setTimeout(() => {
@@ -13,109 +14,148 @@ const handleContactUsRedirect = () => {
 
 export const Contactar = () => {
 
-    // const [state, handleSubmit] = useForm('xvoyogoy');
-    // if (state.succeeded) {
-  
-    //   handleContactUsRedirect();
-    //   return <div>Gracias por contactarnos</div>;
-    // }
+    const [state, handleSubmit] = useForm('mlevjkya');
+
+    if (state.succeeded) {
+      handleContactUsRedirect();
+      return <Grid mt={ 4 }
+      mb={ 10 }
+      p={ 2 }
+      container spacing={ 6 }
+      width='100%'
+      justifyContent='space-between'
+      maxWidth='1200px' className='contactinfo'>
+      <Grid item 
+            xs={ 12 } 
+            md={ 6 }
+
+            width='100%' display='flex' flexDirection='column'>
+            <Typography variant='h5'>Gracias por contactarnos!</Typography>
+            <Typography variant='h6'>En seguida le daremos una respuesta.</Typography>
+        </Grid>
+                        <Grid item 
+                        xs={ 12 } 
+                        md={ 6 }>
+                            <Box>
+                                <Typography component='h5' variant='h6' fontWeight={800} sx={{ marginBottom: 3 }}> Teléfono: </Typography>
+                                <Box display='flex' flexDirection='row'> <PhoneIcon /> <a href='tel:993 202 1992'><Typography ml={ 2 } mb={ 1 } component='h5' variant='h6'  sx={{ color:'#000' }}> 993 202 1992 </Typography> </a></Box>
+                            </Box>
+                            <Box mt={ 4 }>
+                                <Typography component='h5' variant='h6' fontWeight={800} sx={{ marginBottom: 3 }}> Dirección: </Typography>
+                                <Box display='flex' flexDirection='row'> <LocationOnIcon /> <a href='https://goo.gl/maps/4NCs7tG9UD9NLVS69' target="_blank" ><Typography ml={ 2 } mb={ 1 } component='h5' variant='h6'  sx={{ color:'#000' }}> Boulevard Adolfo Ruiz Cortines 1344-Piso 2, Atasta de Serra, 86035 Villahermosa, Tab. </Typography> </a></Box>
+                            </Box>
+                        </Grid>
+      </Grid>
+    }
 
   return (
-    <Box id='contacto'     pt={ 10 }>
+    <Box id='contacto' pt={ 10 }>
     <img src="https://res.cloudinary.com/dnxxkvpiz/image/upload/v1663620484/VAYASA/contactimg_byevvd.jpg" alt="oil and gas" style={{ height:"300px", width:"100%", objectFit:'cover' }} />
-    <Grid
-    mt={ 4 }
-    mb={ 10 }
-    p={ 2 }
-    container  
-    width='100%'
+    
+        <Grid
+        mt={ 4 }
+        mb={ 10 }
+        p={ 2 }
+        container spacing={ 6 }
 
-    justifyContent='space-between'
-    maxWidth='1200px' className='contactinfo' 
-    >
-        <Grid item 
-        xs={ 12 } 
-        md={ 6 }
-
-        width='100%' display='flex' flexDirection='column' 
+        width='100%'
+        justifyContent='space-between'
+        maxWidth='1200px' className='contactinfo' 
         >
+            <Grid item 
+            xs={ 12 } 
+            md={ 6 }
 
-            <Typography component='h1' variant='h3' fontWeight={800} sx={{ marginBottom: 3 }}> Contactar </Typography>
-                
-            <form >
-
-           
-                <TextField
-                    fullWidth
-                    id="name"
-                    type="name" 
-                    name="name"
-                   
-                    label="Nombre"
-                    variant="standard"
-                    sx={{ marginBottom: 2 }}
-                    required
-                />
-                <TextField
-                    fullWidth
-                    id="company"
-                    type="company" 
-                    name="company"
-                   
-                    label="Empresa"
-                    variant="standard"
-                    sx={{ marginBottom: 2 }}
-                    required
-                />
-                <TextField
-                fullWidth
-                    id="email"
-                    type="email" 
-                    name="email"
-
-                    label="Email"
-                    variant="standard"
-                    sx={{ marginBottom: 2 }}
+            width='100%' display='flex' flexDirection='column'>
+                <Typography component='h2' variant='h3' fontWeight={800} sx={{ marginBottom: 3 }}> Contactar </Typography>
                     
-                    required
-                />
-                {/* <ValidationError 
-                    prefix="Email" 
-                    field="email"
-                    errors={state.errors}
-                /> */}
-                <TextField
-                fullWidth
-                    id="message"
-                    name="message"
+                <form onSubmit={handleSubmit} >
 
-                    label="Mensaje"
-                    variant="standard"
-                    multiline
-                    rows={4}
-                    sx={{ marginBottom: 2 }}
-                    required
-                />
-                {/* <ValidationError 
-                    prefix="Message" 
-                    field="message"
-                    errors={state.errors}
-                /> */}
-              
-            <Box marginTop={ 6 }>
+            
+                    <TextField
+                        fullWidth
+                        id="name"
+                        type="name" 
+                        name="name"
+                    
+                        label="Nombre"
+                        variant="standard"
+                        sx={{ marginBottom: 2 }}
+                        required
+                    />
+                    <TextField
+                        fullWidth
+                        id="company"
+                        type="company" 
+                        name="company"
+                    
+                        label="Empresa"
+                        variant="standard"
+                        sx={{ marginBottom: 2 }}
+                        required
+                    />
+                    <TextField
+                    fullWidth
+                        id="email"
+                        type="email" 
+                        name="email"
 
-                <Button type="submit" 
-                    sx={{ color:'#fff',
-                    paddingLeft:'2rem', paddingRight:'2rem',":hover":{transform: 'scale(1.03)'}, width:'100%' }}>
-                    <Typography fontWeight={ 700 } fontSize='15px' lineHeight='36px'>Enviar mensaje</Typography>
-                </Button>
+                        label="Email"
+                        variant="standard"
+                        sx={{ marginBottom: 2 }}
+                        
+                        required
+                    />
+                    <ValidationError 
+                        prefix="Email" 
+                        field="email"
+                        errors={state.errors}
+                    />
+                    <TextField
+                    fullWidth
+                        id="message"
+                        name="message"
 
+                        label="Mensaje"
+                        variant="standard"
+                        multiline
+                        rows={4}
+                        sx={{ marginBottom: 2 }}
+                        required
+                    />
+                    <ValidationError 
+                        prefix="Message" 
+                        field="message"
+                        errors={state.errors}
+                    />
+                
+                <Box marginTop={ 6 }>
+
+                    <Button type="submit"  disabled={state.submitting}
+                        sx={{ color:'#fff',
+                        paddingLeft:'2rem', paddingRight:'2rem',":hover":{transform: 'scale(1.03)'}, width:'100%' }}>
+                        <Typography fontWeight={ 700 } fontSize='15px' lineHeight='36px'>Enviar mensaje</Typography>
+                    </Button>
+
+                    </Box>
+                </form>
+
+            </Grid>
+
+            <Grid item 
+            xs={ 12 } 
+            md={ 6 }>
+                <Box>
+                    <Typography component='h5' variant='h6' fontWeight={800} sx={{ marginBottom: 3 }}> Teléfono: </Typography>
+                    <Box display='flex' flexDirection='row'> <PhoneIcon /> <a href='tel:993 202 1992'><Typography ml={ 2 } mb={ 1 } component='h5' variant='h6'  sx={{ color:'#000' }}> 993 202 1992 </Typography> </a></Box>
                 </Box>
-            </form>
-
+                <Box mt={ 4 }>
+                    <Typography component='h5' variant='h6' fontWeight={800} sx={{ marginBottom: 3 }}> Dirección: </Typography>
+                    <Box display='flex' flexDirection='row'> <LocationOnIcon /> <a href='https://goo.gl/maps/4NCs7tG9UD9NLVS69' target="_blank" ><Typography ml={ 2 } mb={ 1 } component='h5' variant='h6'  sx={{ color:'#000' }}> Boulevard Adolfo Ruiz Cortines 1344-Piso 2, Atasta de Serra, 86035 Villahermosa, Tab. </Typography> </a></Box>
+                </Box>
+            </Grid>
         </Grid>
 
-    </Grid>
     </Box>
   )
 }
