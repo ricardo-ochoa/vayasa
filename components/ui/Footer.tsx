@@ -30,7 +30,7 @@ export const Footer = () => {
                     </Link>
                 </NextLink>
 
-                <Typography color='#fff' variant='subtitle2' sx={{marginLeft:"1rem",marginTop:{xs:'0rem', md:'0'}}}>© 2022 Industrias VAYASA, S. de R.L. de C.V.</Typography>
+                <Typography color='#fff' variant='subtitle2' sx={{marginLeft:"1rem",marginTop:{xs:'0rem', md:'0'}}}>© 2023 Industrias VAYASA, S. de R.L. de C.V.</Typography>
             </Toolbar> 
 
             <Box display='flex' width="100%" height="80px">
