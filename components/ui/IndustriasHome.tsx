@@ -2,7 +2,7 @@ import { Grid, Typography, List, ListItem, ListItemText, CardMedia, CardActionAr
 import DoneTwoToneIcon from '@mui/icons-material/DoneTwoTone';
 import { useRouter } from 'next/router';
 
-export const Industrias = () => {
+export const IndustriasHome = () => {
 
   const router = useRouter();
 
@@ -22,7 +22,7 @@ export const Industrias = () => {
           <CardActionArea sx={{ backgroundColor: '#35569d' }}>
 
             <CardMedia
-              onClick={() => navigateTo('#oil')}
+              onClick={() => navigateTo('/oil')}
               component="img"
               height={350}
               sx={{ mixBlendMode: "luminosity", ":hover": { mixBlendMode: "normal" } }}
@@ -35,24 +35,10 @@ export const Industrias = () => {
           <Typography variant='h6' textAlign='center' mt={2} fontWeight={800}> Oil & Gas </Typography>
         </Grid>
 
-        {/* <Grid item xs={ 12 } sm={ 6 } md={ 4 } mt={ 1 } >
-          <CardActionArea sx={{ backgroundColor:'#35569d'}}>
-            <CardMedia
-            onClick={ () => navigateTo('#mantenimiento')}
-            component="img"
-            sx={{ mixBlendMode: "luminosity", ":hover":{ mixBlendMode:"normal" } }}
-            src={ 'https://res.cloudinary.com/dnxxkvpiz/image/upload/v1663600281/VAYASA/mantenimiento_iehh6i.jpg' }
-            alt="Valores vayasa"
-            style={{objectFit:"cover"}}>
-            </CardMedia>
-          </CardActionArea>
-          <Typography variant='h5' textAlign='center' mt={ 2 }> Mantenimiento industrial </Typography>
-        </Grid> */}
-
         <Grid item xs={12} sm={6} md={3} mt={1} >
           <CardActionArea sx={{ backgroundColor: '#35569d' }}>
             <CardMedia
-              onClick={() => navigateTo('#mantenimiento')}
+              // onClick={() => navigateTo('/')}
               component="img"
               height={350}
               sx={{ mixBlendMode: "luminosity", ":hover": { mixBlendMode: "normal" } }}
@@ -67,7 +53,7 @@ export const Industrias = () => {
         <Grid item xs={12} sm={6} md={3} mt={1} >
           <CardActionArea sx={{ backgroundColor: '#35569d' }}>
             <CardMedia
-              onClick={() => navigateTo('#consultoria')}
+              onClick={() => navigateTo('/consultoria')}
               component="img"
               height={350}
               sx={{ mixBlendMode: "luminosity", ":hover": { mixBlendMode: "normal" } }}
@@ -82,7 +68,7 @@ export const Industrias = () => {
         <Grid item xs={12} sm={6} md={3} mt={1}>
           <CardActionArea sx={{ backgroundColor: '#35569d' }}>
             <CardMedia
-              onClick={() => navigateTo('#comercializacion')}
+              onClick={() => navigateTo('/comercializacion')}
               component="img"
               height={350}
               sx={{ mixBlendMode: "luminosity", ":hover": { mixBlendMode: "normal" } }}

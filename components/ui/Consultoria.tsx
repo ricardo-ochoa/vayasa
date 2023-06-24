@@ -2,11 +2,11 @@ import { Grid, Typography, List, ListItem, ListItemText, CardMedia, Box } from '
 import DoneTwoToneIcon from '@mui/icons-material/DoneTwoTone';
 import Image from 'next/image';
 
-export const Comercializacion = () => {
+export const Consultoria = () => {
   return (
-    <Box id='comercializacion'>
-      <CardMedia component="img" src="https://res.cloudinary.com/dnxxkvpiz/image/upload/v1663600281/VAYASA/comercializacion_y5zz7z.jpg" alt="oil and gas" style={{ height: "300px", width: "100%", objectFit: 'cover' }} />
-      <Typography variant='h3' fontWeight='800' textAlign='center' mb={4} mt={2} >Comercializacion</Typography>
+    <Box id='consultoria'>
+      <CardMedia component="img" src="https://res.cloudinary.com/dnxxkvpiz/image/upload/v1687646269/VAYASA/banner_consutoria_remmgk.jpg" alt="oil and gas" style={{ height: "300px", width: "100%", objectFit: 'cover' }} />
+      <Typography variant='h3' fontWeight='800' textAlign='center' mb={4} mt={2} >Consultaría jurídico mercantil</Typography>
 
       <Grid container flexDirection="row" padding={2} spacing={4}>
 
