@@ -34,7 +34,7 @@ export const SideMenu = () => {
                 <List>
 
                     <ListItem button
-                        onClick={() => navigateTo('/oil')}>
+                        onClick={() => navigateTo('/ingenieria')}>
                         <ListItemIcon>
                             <FactoryTwoToneIcon />
                         </ListItemIcon>

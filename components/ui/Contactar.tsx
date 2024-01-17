@@ -61,7 +61,7 @@ export const Contactar = () => {
     }
 
     return (
-        <Box id='contacto' pt={10}>
+        <Box id='contacto' pt={10} className="animate__animated animate__backInUp solutionContact">
             <CardMedia component="img" src="https://res.cloudinary.com/dnxxkvpiz/image/upload/v1663620484/VAYASA/contactimg_byevvd.jpg" alt="oil and gas" style={{ height: "300px", width: "100%", objectFit: 'cover' }} />
 
             <Grid

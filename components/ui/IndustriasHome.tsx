@@ -18,7 +18,7 @@ export const IndustriasHome = () => {
 
       <Grid container flexDirection="row" padding={2} spacing={4}>
 
-        <Grid item xs={12} sm={6} md={3} mt={1}>
+        <Grid item xs={12} sm={6} md={3} mt={1} className="animate__animated animate__fadeInUp solutionInge">
           <CardActionArea sx={{ backgroundColor: '#35569d' }}>
 
             <CardMedia
@@ -35,7 +35,7 @@ export const IndustriasHome = () => {
           <Typography variant='h6' textAlign='center' mt={2} fontWeight={800}> Ingeniería </Typography>
         </Grid>
 
-        <Grid item xs={12} sm={6} md={3} mt={1} >
+        <Grid item xs={12} sm={6} md={3} mt={1} className="animate__animated animate__fadeInUp solutionCapa">
           <CardActionArea sx={{ backgroundColor: '#35569d' }}>
             <CardMedia
               onClick={() => navigateTo('/')}
@@ -50,7 +50,7 @@ export const IndustriasHome = () => {
           <Typography variant='h6' textAlign='center' mt={2} fontWeight={800}> Capacitación </Typography>
         </Grid>
 
-        <Grid item xs={12} sm={6} md={3} mt={1} >
+        <Grid item xs={12} sm={6} md={3} mt={1} className="animate__animated animate__fadeInUp solutionConsu">
           <CardActionArea sx={{ backgroundColor: '#35569d' }}>
             <CardMedia
               onClick={() => navigateTo('/consultoria')}
@@ -65,7 +65,7 @@ export const IndustriasHome = () => {
           <Typography variant='h6' textAlign='center' mt={2} fontWeight={800}> Consultaría jurídico mercantil </Typography>
         </Grid>
 
-        <Grid item xs={12} sm={6} md={3} mt={1}>
+        <Grid item xs={12} sm={6} md={3} mt={1} className="animate__animated animate__fadeInUp solutionComer">
           <CardActionArea sx={{ backgroundColor: '#35569d' }}>
             <CardMedia
               onClick={() => navigateTo('/comercializacion')}

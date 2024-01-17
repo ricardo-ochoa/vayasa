@@ -32,7 +32,7 @@ export const Navbar = () => {
                 <Box flex={1} />
 
                 <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
-                    <NextLink href='/oil' passHref>
+                    <NextLink href='/ingenieria' passHref>
                         <Link>
                             <Button color='info'> Ingeniería </Button>
                         </Link>

@@ -28,6 +28,11 @@ export const PageLayout:FC<Props> = ({ children, title, pageDescription, imageFu
                 )
             }
 
+            <link
+                rel="stylesheet"
+                href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+            />
+
             <meta name="author" content="Ricardo Ochoa"></meta>
             <meta name="copyright" content="Ricardo @ochoagram"></meta>
             <meta name="robots" content={ robots }></meta>

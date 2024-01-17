@@ -22,6 +22,22 @@ a {
   font-size: 1.3rem!important;
 }
 
+.solutionInge {
+  --animate-duration: 1s;
+}
+.solutionCapa {
+  --animate-duration: 1.5s;
+}
+.solutionConsu {
+  --animate-duration: 2s;
+}
+.solutionComer {
+  --animate-duration: 2.5s;
+}
+.solutionContact {
+  --animate-duration: 3s;
+}
+
 
 
 .cls-1{

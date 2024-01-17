@@ -6,9 +6,9 @@ export const Oil = () => {
   return (
     <Box id='oil'>
       <CardMedia component="img" src="https://res.cloudinary.com/dnxxkvpiz/image/upload/v1663391388/VAYASA/oil_clg5v7.jpg" alt="oil and gas" style={{ height: "300px", width: "100%", objectFit: 'cover' }} />
-      <Typography variant='h3' fontWeight='800' textAlign='center' mb={4} mt={2}>Ingeniería</Typography>
+      <Typography variant='h3' fontWeight='800' textAlign='center' mb={4} mt={2} className="animate__animated animate__zoomIn">Ingeniería</Typography>
 
-      <Grid container flexDirection="row" padding={2} spacing={4}>
+      <Grid container flexDirection="row" padding={2} spacing={4} className="animate__animated animate__zoomIn">
 
         <Grid item xs={12} md={6} mt={3}>
           <Typography variant='h5' fontWeight='600'>Upstream</Typography>
