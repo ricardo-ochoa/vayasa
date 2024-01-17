@@ -14,15 +14,15 @@ export const Comercializacion = () => {
           <List>
             <ListItem>
               <DoneTwoToneIcon />
-              <ListItemText primary="Generar e implementar planes estratégicos de abastecimiento." sx={{ marginLeft: '0.5rem' }} />
+              <ListItemText className='itemList' primary="Generar e implementar planes estratégicos de abastecimiento." sx={{ marginLeft: '0.5rem' }} />
             </ListItem>
             <ListItem>
               <DoneTwoToneIcon />
-              <ListItemText primary="Proveeduría de artículos de especialidad para variedad de  sectores." sx={{ marginLeft: '0.5rem' }} />
+              <ListItemText className='itemList' primary="Proveeduría de artículos de especialidad para variedad de  sectores." sx={{ marginLeft: '0.5rem' }} />
             </ListItem>
             <ListItem>
               <DoneTwoToneIcon />
-              <ListItemText primary="Proyectar y ejecutar logísticas de comercialización mayorista y minorista." sx={{ marginLeft: '0.5rem' }} />
+              <ListItemText className='itemList' primary="Proyectar y ejecutar logísticas de comercialización mayorista y minorista." sx={{ marginLeft: '0.5rem' }} />
             </ListItem>
           </List>
         </Grid>

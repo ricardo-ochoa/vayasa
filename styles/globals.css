@@ -18,6 +18,10 @@ a {
   box-sizing: border-box;
 }
 
+.itemList span{
+  font-size: 1.3rem!important;
+}
+
 
 
 .cls-1{

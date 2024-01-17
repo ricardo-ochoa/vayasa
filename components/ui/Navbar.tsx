@@ -34,7 +34,12 @@ export const Navbar = () => {
                 <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
                     <NextLink href='/oil' passHref>
                         <Link>
-                            <Button color='info'> Oil & Gas </Button>
+                            <Button color='info'> Ingeniería </Button>
+                        </Link>
+                    </NextLink>
+                    <NextLink href='/' passHref>
+                        <Link>
+                            <Button color='info'> Capacitación </Button>
                         </Link>
                     </NextLink>
                     <NextLink href='/consultoria' passHref>

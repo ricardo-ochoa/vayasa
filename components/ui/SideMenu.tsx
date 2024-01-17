@@ -7,6 +7,7 @@ import FactoryTwoToneIcon from '@mui/icons-material/FactoryTwoTone';
 import Diversity1TwoToneIcon from '@mui/icons-material/Diversity1TwoTone';
 import GavelTwoToneIcon from '@mui/icons-material/GavelTwoTone';
 import InventoryTwoToneIcon from '@mui/icons-material/InventoryTwoTone';
+import PlayLessonTwoToneIcon from '@mui/icons-material/PlayLessonTwoTone';
 
 import { UiContext } from "../../context";
 import { useRouter } from "next/router";
@@ -37,7 +38,14 @@ export const SideMenu = () => {
                         <ListItemIcon>
                             <FactoryTwoToneIcon />
                         </ListItemIcon>
-                        <ListItemText primary={'Oil & Gas'} />
+                        <ListItemText primary={'Ingeniería'} />
+                    </ListItem>
+                    <ListItem button
+                        onClick={() => navigateTo('/')}>
+                        <ListItemIcon>
+                            <PlayLessonTwoToneIcon />
+                        </ListItemIcon>
+                        <ListItemText primary={'Capacitación'} />
                     </ListItem>
                     <ListItem button
                         onClick={() => navigateTo('/consultoria')}>

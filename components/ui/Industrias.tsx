@@ -13,7 +13,7 @@ export const Industrias = () => {
   return (
     <section id='industrias'>
       <Grid pt={12}>
-        <Typography variant='h2' textAlign='left' fontWeight='800'>Nuestras Especialidades</Typography>
+        <Typography variant='h2' textAlign='left' fontWeight='800'>Soluciones</Typography>
       </Grid>
 
       <Grid container flexDirection="row" padding={2} spacing={4}>
@@ -32,7 +32,7 @@ export const Industrias = () => {
             </CardMedia>
 
           </CardActionArea>
-          <Typography variant='h6' textAlign='center' mt={2} fontWeight={800}> Oil & Gas </Typography>
+          <Typography variant='h6' textAlign='center' mt={2} fontWeight={800}> Ingeniería </Typography>
         </Grid>
 
         {/* <Grid item xs={ 12 } sm={ 6 } md={ 4 } mt={ 1 } >
