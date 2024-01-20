@@ -6,9 +6,9 @@ export const Consultoria = () => {
   return (
     <Box id='consultoria'>
       <CardMedia component="img" src="https://res.cloudinary.com/dnxxkvpiz/image/upload/v1687646269/VAYASA/banner_consutoria_remmgk.jpg" alt="oil and gas" style={{ height: "300px", width: "100%", objectFit: 'cover' }} />
-      <Typography variant='h3' fontWeight='800' textAlign='center' mb={4} mt={2} className="animate__animated animate__zoomIn">Consultaría jurídico mercantil</Typography>
+      <Typography variant='h2' fontWeight='800' textAlign='center' mb={4} mt={2} className="animate__animated animate__zoomIn">Consultaría jurídico mercantil</Typography>
 
-      <Grid container flexDirection="row" padding={2} spacing={16}>
+      <Grid container flexDirection="row" padding={2} spacing={6}>
 
         <Grid item xs={12} md={12} mt={6} className="animate__animated animate__zoomIn">
         <Typography variant='h4' fontWeight='800' textAlign='left' mb={4} mt={2} >Objetivo</Typography>
@@ -44,7 +44,7 @@ export const Consultoria = () => {
 
         <Grid item xs={12} md={12} mt={3} className="animate__animated animate__zoomIn">
         <Typography variant='h4' fontWeight='800' textAlign='center' mb={1} mt={2} >MACROPROCESO DE LA ADMINISTRACIÓN DE LOS CONTRATOS</Typography>
-        <CardMedia component="img" src="https://res.cloudinary.com/dsvlqbftn/image/upload/v1705477831/vayasa/banner_macro_hzkblq.jpg" alt="oil and gas" style={{ maxHeight: "90%", maxWidth: "100%", margin: '0 auto' }} />
+        <CardMedia component="img" src="https://res.cloudinary.com/dsvlqbftn/image/upload/v1705477831/vayasa/banner_macro_hzkblq.jpg" alt="oil and gas" style={{ maxHeight: "90%", maxWidth: "80%", margin: '0 auto' }} />
         </Grid>
 
         <Grid item xs={12} md={12} mt={3} className="animate__animated animate__zoomIn">
