@@ -161,13 +161,14 @@ export const Contactar = () => {
                     md={6}>
                     <Box>
                         <Typography component='h5' variant='h6' fontWeight={800} sx={{ marginBottom: 3 }}> Teléfono: </Typography>
-                        <Box display='flex' flexDirection='row'> <PhoneIcon /> <a href='tel:993 187 1102'><Typography ml={2} mb={1} component='h5' variant='h6' sx={{ color: '#000' }}> 993 187 1102 </Typography> </a></Box>
+                        <Box display='flex' flexDirection='row'> <PhoneIcon /> <a href='tel:993 187 1102'><Typography ml={2} mb={1} 
+                        sx={{ color: '#000' }}> 993 187 1102 </Typography> </a></Box>
                     </Box>
                     <Box mt={4}>
                         <Typography component='h5' variant='h6' fontWeight={800} sx={{ marginBottom: 3 }}> Dirección: </Typography>
                         <Box display='flex' flexDirection='row'> <LocationOnIcon />
                             <a href='https://goo.gl/maps/SMcStjacTNjXdS1U8' target="_blank" rel="noreferrer">
-                                <Typography ml={2} mb={1} component='h5' variant='h6' sx={{ color: '#000' }}>
+                                <Typography ml={2} mb={1} sx={{ color: '#000' }}>
                                     Calle Hicotea edificio 13, depto. 103 multi 83, Tabasco 2000, C.P. 86035, Villahermosa, Tab.
                                 </Typography> </a></Box>
                     </Box>
@@ -175,7 +176,7 @@ export const Contactar = () => {
                         <Typography component='h5' variant='h6' fontWeight={800} sx={{ marginBottom: 3 }}> Email: </Typography>
                         <Box display='flex' flexDirection='row'> <MarkEmailReadIcon />
                             <a href='mailto:contacto@industriasvayasa.com'>
-                                <Typography ml={2} mb={1} component='h5' variant='h6' sx={{ color: '#000' }}>
+                                <Typography ml={2} mb={1} sx={{ color: '#000'}}>
                                     contacto@industriasvayasa.com
                                 </Typography> </a></Box>
                     </Box>

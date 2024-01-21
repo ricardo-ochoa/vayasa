@@ -51,3 +51,11 @@ a {
 .main{
   scroll-behavior: smooth;
 }
+
+.solutionImage {
+  transition: transform .2s;
+}
+
+.solutionImage:hover {
+  transform: scale(1.05);
+}
