@@ -19,16 +19,21 @@ const handleContactUsRedirect = () => {
 
 export const Contactar = () => {
     const captcha = useRef<any>(null)
-    const validateForm = captcha.current !== null
-    const [validation, setValidation] = useState(validateForm)
+    const [validation, setValidation] = useState(false)
     
     function onChange() {
-        if (captcha.current !== null) {
+        if (captcha.current.getValue().length > 0) {
             captcha.current.getValue()
-            setValidation(validateForm)
-            console.log(validation)
+            setValidation(true)
         }
     }
+
+    useEffect(() => {
+        if (validation){
+            setValidation(true)
+        }
+    }, [validation])
+    
     
     const [state, handleSubmit] = useForm('mnqkajqe');
 
@@ -104,7 +109,7 @@ export const Contactar = () => {
                             id="name"
                             type="name"
                             name="name"
-
+                            onChange={onChange}
                             label="Nombre"
                             variant="standard"
                             sx={{ marginBottom: 2 }}
@@ -115,7 +120,7 @@ export const Contactar = () => {
                             id="company"
                             type="company"
                             name="company"
-
+                            onChange={onChange}
                             label="Empresa"
                             variant="standard"
                             sx={{ marginBottom: 2 }}
@@ -126,7 +131,7 @@ export const Contactar = () => {
                             id="email"
                             type="email"
                             name="email"
-
+                            onChange={onChange}
                             label="Email"
                             variant="standard"
                             sx={{ marginBottom: 2 }}
@@ -142,7 +147,7 @@ export const Contactar = () => {
                             fullWidth
                             id="message"
                             name="message"
-
+                            onChange={onChange}
                             label="Mensaje"
                             variant="standard"
                             multiline
@@ -164,11 +169,13 @@ export const Contactar = () => {
 
                         <Box marginTop={6}>
 
-                            <Button type="submit" disabled={!validation}
+                            <Button type="submit" 
+                            disabled={!validation}
                                 sx={{
                                     color: '#fff',
                                     paddingLeft: '2rem', paddingRight: '2rem', ":hover": { transform: 'scale(1.03)' }, width: '100%'
-                                }}>
+                                }}
+                                >
                                 <Typography fontWeight={700} fontSize='15px' lineHeight='36px'>Enviar mensaje</Typography>
                             </Button>
 
