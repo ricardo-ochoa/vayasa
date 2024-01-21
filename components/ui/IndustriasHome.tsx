@@ -14,7 +14,7 @@ export const IndustriasHome = () => {
   const solutions = {
     inge: ['https://res.cloudinary.com/dnxxkvpiz/image/upload/v1663391388/VAYASA/oil_clg5v7.jpg',
     'https://res.cloudinary.com/dsvlqbftn/image/upload/v1705802050/vayasa/F1_Ing_et3nnt.jpg',
-    'https://res.cloudinary.com/dsvlqbftn/image/upload/v1705802050/vayasa/F1_Ing_et3nnt.jpg',
+    'https://res.cloudinary.com/dsvlqbftn/image/upload/v1705802050/vayasa/F2_Ing_mrjsmw.jpg',
     'https://res.cloudinary.com/dsvlqbftn/image/upload/v1705802050/vayasa/F3_Ing_htxcff.jpg',],
     capa: ['https://res.cloudinary.com/dsvlqbftn/image/upload/v1705802805/vayasa/F1_Cap_ain3ca.jpg',
     'https://res.cloudinary.com/dsvlqbftn/image/upload/v1705802805/vayasa/F2_Cap_kfaaec.jpg',
