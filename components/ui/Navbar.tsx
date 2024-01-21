@@ -1,8 +1,8 @@
 import { useContext } from 'react'
 import NextLink from 'next/link'
 import { UiContext } from '../../context'
-import { AppBar, Toolbar, Typography, Link, Box, Button, IconButton, Badge } from '@mui/material'
-import { FavoriteBorderOutlined, MenuOutlined, SearchOutlined, ShoppingBagOutlined } from '@mui/icons-material'
+import { AppBar, Toolbar, Link, Box, Button, IconButton } from '@mui/material'
+import { MenuOutlined } from '@mui/icons-material'
 
 
 export const Navbar = () => {
@@ -31,7 +31,7 @@ export const Navbar = () => {
 
                 <Box flex={1} />
 
-                <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
+                <Box sx={{ display: { xs: 'none', md: 'block' } }}>
                     <NextLink href='/ingenieria' passHref>
                         <Link>
                             <Button color='info'> Ingeniería </Button>
@@ -65,7 +65,7 @@ export const Navbar = () => {
                 </Box>
 
 
-                <IconButton sx={{ display: { xs: 'block', sm: 'none' } }} onClick={toggleSideMenu}>
+                <IconButton sx={{ display: { xs: 'block', md: 'none' } }} onClick={toggleSideMenu}>
                     <MenuOutlined></MenuOutlined>
                 </IconButton>
 

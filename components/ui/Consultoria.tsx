@@ -1,12 +1,38 @@
 import { Grid, Typography, List, ListItem, ListItemText, CardMedia, Box } from '@mui/material'
 import DoneTwoToneIcon from '@mui/icons-material/DoneTwoTone';
-import Image from 'next/image';
+import { useTheme } from '@mui/material/styles';
+import useMediaQuery from '@mui/material/useMediaQuery';
+import SimpleImageSlider from "react-simple-image-slider";
+
+const images = [
+  {url:  'https://res.cloudinary.com/dsvlqbftn/image/upload/v1705813822/vayasa/slide2consul_g9cohp.jpg'},
+  {url:  'https://res.cloudinary.com/dsvlqbftn/image/upload/v1705813822/vayasa/slide3consul_clmfdj.jpg'},
+  {url:  'https://res.cloudinary.com/dsvlqbftn/image/upload/v1705813821/vayasa/slide1consul_exwzz5.jpg'}
+]
 
 export const Consultoria = () => {
+
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down('md'));
+  
   return (
     <Box id='consultoria'>
-      <CardMedia component="img" src="https://res.cloudinary.com/dnxxkvpiz/image/upload/v1687646269/VAYASA/banner_consutoria_remmgk.jpg" alt="oil and gas" style={{ height: "300px", width: "100%", objectFit: 'cover' }} />
-      <Typography variant='h2' fontWeight='800' textAlign='center' mb={4} mt={2} className="animate__animated animate__zoomIn">Consultaría jurídico mercantil</Typography>
+
+      <Box height={'100%'} width={'100%'} margin={'0 auto'} style={{ backgroundColor: 'green', position: 'sticky'}} >
+        <SimpleImageSlider
+          width={'100%'}
+          height={isMobile ? 200 : 400}
+          slideDuration={3}
+          images={images}
+          showBullets={true}
+          showNavs={true}
+          autoPlay={true}
+        />
+      </Box>
+
+      {/* <CardMedia component="img" src="https://res.cloudinary.com/dnxxkvpiz/image/upload/v1687646269/VAYASA/banner_consutoria_remmgk.jpg" 
+      alt="oil and gas" style={{ height: "300px", width: "100%", objectFit: 'cover' }} /> */}
+      <Typography variant='h2' fontWeight='800' textAlign='center' mb={4} mt={4} className="animate__animated animate__zoomIn">Consultaría jurídico mercantil</Typography>
 
       <Grid container flexDirection="row" padding={2} spacing={6}>
 

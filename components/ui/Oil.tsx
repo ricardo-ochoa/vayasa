@@ -3,7 +3,6 @@ import DoneTwoToneIcon from '@mui/icons-material/DoneTwoTone';
 import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import SimpleImageSlider from "react-simple-image-slider";
-// import Image from 'next/image';
 
 const images = [
   {url:  'https://res.cloudinary.com/dsvlqbftn/image/upload/v1705808601/vayasa/slide3_zyjvoo.jpg'},
