@@ -1,7 +1,9 @@
+import { useEffect, useRef, useState } from 'react';
 import { Grid, Typography, TextField, Box, Button, CardMedia } from '@mui/material'
 import PhoneIcon from '@mui/icons-material/Phone';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import MarkEmailReadIcon from '@mui/icons-material/MarkEmailRead';
+import ReCAPTCHA from "react-google-recaptcha";
 
 import { ValidationError, useForm } from '@formspree/react';
 
@@ -13,8 +15,21 @@ const handleContactUsRedirect = () => {
 }
 
 
-export const Contactar = () => {
 
+
+export const Contactar = () => {
+    const captcha = useRef<any>(null)
+    const validateForm = captcha.current !== null
+    const [validation, setValidation] = useState(validateForm)
+    
+    function onChange() {
+        if (captcha.current !== null) {
+            captcha.current.getValue()
+            setValidation(validateForm)
+            console.log(validation)
+        }
+    }
+    
     const [state, handleSubmit] = useForm('mnqkajqe');
 
     if (state.succeeded) {
@@ -141,9 +156,15 @@ export const Contactar = () => {
                             errors={state.errors}
                         />
 
+                        <ReCAPTCHA
+                            ref={captcha}
+                            sitekey="6LdzgFcpAAAAAIoeO0Zc41jXS1RKGpeKeNzzjapo"
+                            onChange={onChange}
+                        />
+
                         <Box marginTop={6}>
 
-                            <Button type="submit" disabled={state.submitting}
+                            <Button type="submit" disabled={!validation}
                                 sx={{
                                     color: '#fff',
                                     paddingLeft: '2rem', paddingRight: '2rem', ":hover": { transform: 'scale(1.03)' }, width: '100%'
