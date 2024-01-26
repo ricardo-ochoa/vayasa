@@ -32,6 +32,7 @@ export const IndustriasHome = () => {
 }
 
 const [count, setCount] = useState(0);
+const [cambio, setCambio] = useState('');
 ////// Images //////
 const imageArray = solutions.inge
 const ingeImages = imageArray[count % imageArray.length];
@@ -48,9 +49,16 @@ const comerImages = comerArray[count % comerArray.length];
 useEffect(() => {
   const timerId = setInterval(() => {
     setCount(count => count + 1);
-  }, 4000);
+  }, 6000);
   return () => clearInterval(timerId);
 }, []);
+
+useEffect(() => {
+  setTimeout(() => {
+    setCambio('opacityImage')
+  }, 10);
+  setCambio('')
+}, [count]);
 
   return (
     <section id='industrias'>
@@ -64,7 +72,7 @@ useEffect(() => {
           <CardActionArea sx={{ backgroundColor: '#35569d', display: 'flex' }}>
             
             <Box
-              className='solutionImage'
+              className={`${cambio} solutionImage`}
               onClick={() => navigateTo('/ingenieria')}
               sx={{ mixBlendMode: "luminosity", ":hover": { mixBlendMode: "normal" } }}
               component='img'
@@ -73,7 +81,7 @@ useEffect(() => {
               height={'350px'}
               alt='Ingeniería Industrias Vayasa'
               style={{ objectFit: "cover" }}
-            ></Box>
+            />
 
           </CardActionArea>
           <Typography variant='h6' textAlign='center' mt={2} fontWeight={800}> Ingeniería </Typography>
@@ -83,7 +91,7 @@ useEffect(() => {
           <CardActionArea sx={{ backgroundColor: '#35569d', display: 'flex' }}>
 
           <Box
-              className='solutionImage'
+              className={`${cambio} solutionImage`}
               onClick={() => navigateTo('/')}
               sx={{ mixBlendMode: "luminosity", ":hover": { mixBlendMode: "normal" } }}
               component='img'
@@ -92,7 +100,7 @@ useEffect(() => {
               height={'350px'}
               alt='Capacitación Industrias Vayasa'
               style={{ objectFit: "cover" }}
-            ></Box>
+            />
 
           </CardActionArea>
           <Typography variant='h6' textAlign='center' mt={2} fontWeight={800}> Capacitación </Typography>
@@ -101,7 +109,7 @@ useEffect(() => {
         <Grid item xs={12} sm={6} md={3} mt={1} className="animate__animated animate__fadeInUp solutionConsu">
           <CardActionArea sx={{ backgroundColor: '#35569d',  display: 'flex' }}>
           <Box
-              className='solutionImage'
+              className={`${cambio} solutionImage`}
               onClick={() => navigateTo('/consultoria')}
               sx={{ mixBlendMode: "luminosity", ":hover": { mixBlendMode: "normal" } }}
               component='img'
@@ -110,7 +118,7 @@ useEffect(() => {
               height={'350px'}
               alt='Consultoría Industrias Vayasa'
               style={{ objectFit: "cover" }}
-            ></Box>
+            />
           </CardActionArea>
           <Typography variant='h6' textAlign='center' mt={2} fontWeight={800}> Consultaría jurídico mercantil </Typography>
         </Grid>
@@ -118,7 +126,7 @@ useEffect(() => {
         <Grid item xs={12} sm={6} md={3} mt={1} className="animate__animated animate__fadeInUp solutionComer">
           <CardActionArea sx={{ backgroundColor: '#35569d',  display: 'flex'  }}>
           <Box
-              className='solutionImage'
+              className={`${cambio} solutionImage`}
               onClick={() => navigateTo('/comercializacion')}
               sx={{ mixBlendMode: "luminosity", ":hover": { mixBlendMode: "normal" } }}
               component='img'
@@ -127,7 +135,7 @@ useEffect(() => {
               height={'350px'}
               alt='Comercialización Industrias Vayasa'
               style={{ objectFit: "cover" }}
-            ></Box>
+            />
           </CardActionArea>
           <Typography variant='h6' textAlign='center' mt={2} fontWeight={800}> Comercialización </Typography>
         </Grid>
