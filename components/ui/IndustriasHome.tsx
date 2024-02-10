@@ -49,14 +49,14 @@ const comerImages = comerArray[count % comerArray.length];
 useEffect(() => {
   const timerId = setInterval(() => {
     setCount(count => count + 1);
-  }, 6000);
+  }, 5000);
   return () => clearInterval(timerId);
 }, []);
 
 useEffect(() => {
   setTimeout(() => {
     setCambio('opacityImage')
-  }, 10);
+  }, 25);
   setCambio('')
 }, [count]);
 

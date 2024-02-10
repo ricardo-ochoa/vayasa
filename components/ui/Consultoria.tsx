@@ -32,7 +32,7 @@ export const Consultoria = () => {
 
       {/* <CardMedia component="img" src="https://res.cloudinary.com/dnxxkvpiz/image/upload/v1687646269/VAYASA/banner_consutoria_remmgk.jpg" 
       alt="oil and gas" style={{ height: "300px", width: "100%", objectFit: 'cover' }} /> */}
-      <Typography variant='h2' fontWeight='800' textAlign='center' mb={4} mt={5} className="animate__animated animate__zoomIn">Consultaría jurídico mercantil</Typography>
+      <Typography variant='h2' fontWeight='800' textAlign='center' lineHeight={isMobile ? '30px!important' : 'auto'} mb={4} mt={5} className="animate__animated animate__zoomIn">Consultaría jurídico mercantil</Typography>
 
       <Grid container flexDirection="row" padding={2} spacing={6}>
 
