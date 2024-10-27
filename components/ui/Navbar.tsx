@@ -1,16 +1,25 @@
+import { SetStateAction, useState } from 'react'
 import { useContext } from 'react'
 import NextLink from 'next/link'
 import { UiContext } from '../../context'
-import { AppBar, Toolbar, Link, Box, Button, IconButton } from '@mui/material'
+import { AppBar, Toolbar, Link, Box, Button, IconButton, Menu, MenuItem } from '@mui/material'
 import { MenuOutlined } from '@mui/icons-material'
 
-
 export const Navbar = () => {
-
     const { toggleSideMenu } = useContext(UiContext)
 
-    return (
+    // State para controlar la apertura del menú de "Soluciones"
+    const [anchorEl, setAnchorEl] = useState(null)
 
+    const handleOpenMenu = (event: { currentTarget: SetStateAction<null> }) => {
+        setAnchorEl(event.currentTarget)
+    }
+
+    const handleCloseMenu = () => {
+        setAnchorEl(null)
+    }
+
+    return (
         <AppBar position="fixed">
             <Toolbar sx={{ maxWidth: '1920px', margin: '0 auto', width: "100%", height: '70px', alignItems: "center", }}>
                 <NextLink href='/' passHref>
@@ -32,24 +41,43 @@ export const Navbar = () => {
                 <Box flex={1} />
 
                 <Box sx={{ display: { xs: 'none', md: 'block' } }}>
-                    <NextLink href='/ingenieria' passHref>
-                        <Link>
-                            <Button color='info'> Ingeniería </Button>
-                        </Link>
-                    </NextLink>
+                    {/* Botón para abrir el submenú de Soluciones */}
+                    <Button
+                        color='info'
+                        onClick={handleOpenMenu}
+                    >
+                        Soluciones
+                    </Button>
+
+                    {/* Menú desplegable de Soluciones */}
+                    <Menu
+                        anchorEl={anchorEl}
+                        open={Boolean(anchorEl)}
+                        onClose={handleCloseMenu}
+                    >
+                        <NextLink href='/consultoria' passHref>
+                            <Link>
+                                <MenuItem>Maximización del Valor Económico de tu Contrato</MenuItem>
+                            </Link>
+                        </NextLink>
+                        {/* <MenuItem onClick={handleCloseMenu}>Sistemas de Gestión de la Calidad</MenuItem> */}
+                        <NextLink href='/ingenieria' passHref>
+                            <Link>
+                                <MenuItem onClick={handleCloseMenu}>Ingeniería de Perforación para Pozos Petroleros</MenuItem>
+                            </Link>
+                        </NextLink>
+                        {/* <MenuItem onClick={handleCloseMenu}>Seguridad y Salud en el Trabajo</MenuItem>
+                        <MenuItem onClick={handleCloseMenu}>Desarrollo Organizacional</MenuItem> */}
+                        <NextLink href='/comercializacion' passHref>
+                            <Link>
+                                <MenuItem>Otros</MenuItem>
+                            </Link>
+                        </NextLink>
+                    </Menu>
+
                     <NextLink href='/' passHref>
                         <Link>
-                            <Button color='info'> Capacitación </Button>
-                        </Link>
-                    </NextLink>
-                    <NextLink href='/consultoria' passHref>
-                        <Link>
-                            <Button color='info'> Consultoria </Button>
-                        </Link>
-                    </NextLink>
-                    <NextLink href='/comercializacion' passHref>
-                        <Link>
-                            <Button color='info'> Comercialización </Button>
+                            <Button color='info'> Artículos </Button>
                         </Link>
                     </NextLink>
                     <NextLink href='/nosotros' passHref>
@@ -57,18 +85,11 @@ export const Navbar = () => {
                             <Button color='info'> Nosotros </Button>
                         </Link>
                     </NextLink>
-                    {/* <NextLink href='#contacto' passHref>
-                        <Link>
-                            <Button color='info'> Contacto </Button>
-                        </Link>
-                    </NextLink> */}
                 </Box>
-
 
                 <IconButton sx={{ display: { xs: 'block', md: 'none' } }} onClick={toggleSideMenu}>
                     <MenuOutlined></MenuOutlined>
                 </IconButton>
-
             </Toolbar>
         </AppBar>
     )

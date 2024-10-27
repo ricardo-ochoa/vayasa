@@ -1,26 +1,27 @@
-import { useContext } from "react";
-
-import { Box, Divider, Drawer, IconButton, Input, InputAdornment, List, ListItem, ListItemIcon, ListItemText, ListSubheader } from "@mui/material"
-
-import ContactPhoneTwoToneIcon from '@mui/icons-material/ContactPhoneTwoTone';
-import FactoryTwoToneIcon from '@mui/icons-material/FactoryTwoTone';
+import { useState, useContext } from "react";
+import { Box, Drawer, List, ListItem, ListItemIcon, ListItemText, Collapse } from "@mui/material";
+import { ExpandLess, ExpandMore } from '@mui/icons-material';
 import Diversity1TwoToneIcon from '@mui/icons-material/Diversity1TwoTone';
 import GavelTwoToneIcon from '@mui/icons-material/GavelTwoTone';
-import InventoryTwoToneIcon from '@mui/icons-material/InventoryTwoTone';
-import PlayLessonTwoToneIcon from '@mui/icons-material/PlayLessonTwoTone';
-
+import DescriptionTwoToneIcon from '@mui/icons-material/DescriptionTwoTone';
+import EngineeringTwoToneIcon from '@mui/icons-material/EngineeringTwoTone';
 import { UiContext } from "../../context";
 import { useRouter } from "next/router";
+import { UrlObject } from "url";
 
 export const SideMenu = () => {
-
     const router = useRouter();
     const { isMenuOpen, toggleSideMenu } = useContext(UiContext);
+    const [openSoluciones, setOpenSoluciones] = useState(false);
 
-    const navigateTo = (url: string) => {
-        toggleSideMenu()
-        router.push(url)
-    }
+    const navigateTo = (url: string | UrlObject) => {
+        toggleSideMenu();
+        router.push(url);
+    };
+
+    const handleToggleSoluciones = () => {
+        setOpenSoluciones(!openSoluciones);
+    };
 
     return (
         <Drawer
@@ -30,58 +31,45 @@ export const SideMenu = () => {
             onClose={toggleSideMenu}
         >
             <Box sx={{ width: 250, paddingTop: 5 }}>
-
                 <List>
-
-                    <ListItem button
-                        onClick={() => navigateTo('/ingenieria')}>
+                    <ListItem button onClick={handleToggleSoluciones}>
                         <ListItemIcon>
-                            <FactoryTwoToneIcon />
+                            <EngineeringTwoToneIcon />
                         </ListItemIcon>
-                        <ListItemText primary={'Ingeniería'} />
-                    </ListItem>
-                    <ListItem button
-                        onClick={() => navigateTo('/')}>
-                        <ListItemIcon>
-                            <PlayLessonTwoToneIcon />
-                        </ListItemIcon>
-                        <ListItemText primary={'Capacitación'} />
-                    </ListItem>
-                    <ListItem button
-                        onClick={() => navigateTo('/consultoria')}>
-                        <ListItemIcon>
-                            <GavelTwoToneIcon />
-                        </ListItemIcon>
-                        <ListItemText primary={'Consultoría'} />
-                    </ListItem>
-                    <ListItem button
-                        onClick={() => navigateTo('/comercializacion')}>
-                        <ListItemIcon>
-                            <InventoryTwoToneIcon />
-                        </ListItemIcon>
-                        <ListItemText primary={'Comercialización'} />
+                        <ListItemText primary={'Soluciones'} />
+                        {openSoluciones ? <ExpandLess /> : <ExpandMore />}
                     </ListItem>
 
-                    <ListItem button
-                        onClick={() => navigateTo('/nosotros')}
-                    >
+                    {/* Submenú de Soluciones */}
+                    <Collapse in={openSoluciones} timeout="auto" unmountOnExit>
+                        <List component="div" disablePadding>
+                            <ListItem button sx={{ pl: 4 }} onClick={() => navigateTo('/consultoria')}>
+                                <ListItemText primary="Maximización del Valor Económico de tu Contrato" />
+                            </ListItem>
+                            <ListItem button sx={{ pl: 4 }} onClick={() => navigateTo('/ingenieria')}>
+                                <ListItemText primary="Ingeniería de Perforación para Pozos Petroleros" />
+                            </ListItem>
+                            <ListItem button sx={{ pl: 4 }} onClick={() => navigateTo('/comercializacion')}>
+                                <ListItemText primary="Otros" />
+                            </ListItem>
+                        </List>
+                    </Collapse>
+
+                    <ListItem button onClick={() => navigateTo('/')}>
+                        <ListItemIcon>
+                            <DescriptionTwoToneIcon />
+                        </ListItemIcon>
+                        <ListItemText primary={'Artículos'} />
+                    </ListItem>
+
+                    <ListItem button onClick={() => navigateTo('/nosotros')}>
                         <ListItemIcon>
                             <Diversity1TwoToneIcon />
                         </ListItemIcon>
                         <ListItemText primary={'Nosotros'} />
                     </ListItem>
-
-                    {/* <ListItem button
-                        onClick={() => navigateTo('#contacto')}
-                    >
-                        <ListItemIcon>
-                            <ContactPhoneTwoToneIcon />
-                        </ListItemIcon>
-                        <ListItemText primary={'Contacto'} />
-                    </ListItem> */}
-
                 </List>
             </Box>
         </Drawer>
-    )
-}
+    );
+};
