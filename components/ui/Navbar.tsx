@@ -8,12 +8,13 @@ import { MenuOutlined } from '@mui/icons-material'
 export const Navbar = () => {
     const { toggleSideMenu } = useContext(UiContext)
 
-    // State para controlar la apertura del menú de "Soluciones"
-    const [anchorEl, setAnchorEl] = useState(null)
+    // Define el estado anchorEl para aceptar tanto HTMLElement como null
+    const [anchorEl, setAnchorEl] = useState<HTMLElement | null>(null);
 
-    const handleOpenMenu = (event: { currentTarget: SetStateAction<null> }) => {
-        setAnchorEl(event.currentTarget)
-    }
+    // Usa el evento correctamente tipado
+    const handleOpenMenu = (event: React.MouseEvent<HTMLButtonElement>) => {
+        setAnchorEl(event.currentTarget);
+    };
 
     const handleCloseMenu = () => {
         setAnchorEl(null)
