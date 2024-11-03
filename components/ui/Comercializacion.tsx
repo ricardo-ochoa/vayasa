@@ -5,10 +5,10 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 import SimpleImageSlider from "react-simple-image-slider";
 
 const images = [
-  {url:  'https://res.cloudinary.com/dsvlqbftn/image/upload/v1705814388/vayasa/slide4_fxhpro.jpg'},
-  {url:  'https://res.cloudinary.com/dsvlqbftn/image/upload/v1705814388/vayasa/slide3_hdpwbt.jpg'},
-  {url:  'https://res.cloudinary.com/dsvlqbftn/image/upload/v1705814387/vayasa/slide1_e96t4b.jpg'},
-  {url:  'https://res.cloudinary.com/dsvlqbftn/image/upload/v1705814387/vayasa/slide2_vaop6k.jpg'}
+  { url: 'https://res.cloudinary.com/dsvlqbftn/image/upload/v1705814388/vayasa/slide4_fxhpro.jpg' },
+  { url: 'https://res.cloudinary.com/dsvlqbftn/image/upload/v1705814388/vayasa/slide3_hdpwbt.jpg' },
+  { url: 'https://res.cloudinary.com/dsvlqbftn/image/upload/v1705814387/vayasa/slide1_e96t4b.jpg' },
+  { url: 'https://res.cloudinary.com/dsvlqbftn/image/upload/v1705814387/vayasa/slide2_vaop6k.jpg' }
 ]
 
 export const Comercializacion = () => {
@@ -21,7 +21,7 @@ export const Comercializacion = () => {
       {/* <CardMedia component="img" src="https://res.cloudinary.com/dnxxkvpiz/image/upload/v1663600281/VAYASA/comercializacion_y5zz7z.jpg" 
       alt="oil and gas" style={{ height: "300px", width: "100%", objectFit: 'cover' }} /> */}
 
-      <Box height={'100%'} width={'100%'} margin={'0 auto'} style={{ backgroundColor: 'green', position: 'sticky'}} >
+      <Box height={'100%'} width={'100%'} margin={'0 auto'} style={{ backgroundColor: 'green', position: 'sticky' }} >
         <SimpleImageSlider
           width={'100%'}
           height={isMobile ? 200 : 400}

@@ -76,7 +76,7 @@ export const Navbar = () => {
                         </NextLink>
                     </Menu>
 
-                    <NextLink href='/' passHref>
+                    <NextLink href='/articulos' passHref>
                         <Link>
                             <Button color='info'> Artículos </Button>
                         </Link>

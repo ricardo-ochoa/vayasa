@@ -55,7 +55,7 @@ export const SideMenu = () => {
                         </List>
                     </Collapse>
 
-                    <ListItem button onClick={() => navigateTo('/')}>
+                    <ListItem button onClick={() => navigateTo('/articulos')}>
                         <ListItemIcon>
                             <DescriptionTwoToneIcon />
                         </ListItemIcon>
