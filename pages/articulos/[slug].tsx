@@ -77,36 +77,34 @@ const PostDetail: React.FC<PostProps> = ({ post }) => {
         <PageLayout title={'Industrias VAYASA'} pageDescription={'Mantenimiento industrial · Ingeniería · Comercialización'}
             imageFullUrl={'https://res.cloudinary.com/dnxxkvpiz/image/upload/v1663371165/VAYASA/main-banner_avf1f8.jpg'}>
             <Container sx={{ my: 14 }}>
-                <Breadcrumbs aria-label="breadcrumb" sx={{ mb: 2 }}>
+                <Breadcrumbs aria-label="breadcrumb" sx={{ mb: 6 }}>
                     <Link href="/articulos" passHref legacyBehavior>
                         <Typography color="inherit" component="a">Artículos</Typography>
                     </Link>
-                    <Typography color="text.primary">{post.title.rendered}</Typography>
+                    <Typography color="blue">{post.title.rendered}</Typography>
                 </Breadcrumbs>
-                <Paper elevation={3}>
-                    <Box p={4}>
-                        <Typography variant="h2" component="h1" gutterBottom>
-                            {post.title.rendered}
-                        </Typography>
-                        <Typography
-                            component="div"
-                            dangerouslySetInnerHTML={{ __html: post.content.rendered }}
-                            sx={{
-                                '& img': {
-                                    maxWidth: '100%',
-                                    height: 'auto',
+                <Box p={2}>
+                    <Typography variant="h2" component="h1" gutterBottom mb={10}>
+                        {post.title.rendered}
+                    </Typography>
+                    <Typography
+                        component="div"
+                        dangerouslySetInnerHTML={{ __html: post.content.rendered }}
+                        sx={{
+                            '& img': {
+                                maxWidth: '100%',
+                                height: 'auto',
+                            },
+                            '& a': {
+                                color: 'primary.main',
+                                textDecoration: 'none',
+                                '&:hover': {
+                                    textDecoration: 'underline',
                                 },
-                                '& a': {
-                                    color: 'primary.main',
-                                    textDecoration: 'none',
-                                    '&:hover': {
-                                        textDecoration: 'underline',
-                                    },
-                                },
-                            }}
-                        />
-                    </Box>
-                </Paper>
+                            },
+                        }}
+                    />
+                </Box>
             </Container>
         </PageLayout >
     );

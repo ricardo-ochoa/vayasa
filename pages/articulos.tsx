@@ -92,7 +92,15 @@ const Articulos: React.FC<ArticulosProps> = ({ posts }) => {
                                 </CardContent>
                                 <CardActions>
                                     <Link href={`/articulos/${post.slug}`} passHref legacyBehavior>
-                                        <Button size="large" color="info" component="a">
+                                        <Button size="large" component="a" sx={{
+                                            width: '100%',            // Hace que el botón ocupe el 100% del ancho
+                                            backgroundColor: 'primary',   // Color de fondo azul
+                                            color: 'white',            // Texto blanco
+                                            '&:hover': {
+                                                backgroundColor: 'darkblue', // Cambia a un azul más oscuro al hacer hover
+                                                color: 'white',
+                                            },
+                                        }}>
                                             Leer
                                         </Button>
                                     </Link>
