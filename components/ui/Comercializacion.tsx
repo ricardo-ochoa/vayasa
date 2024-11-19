@@ -34,7 +34,7 @@ export const Comercializacion = () => {
       </Box>
 
 
-      <Typography variant='h3' fontWeight='800' textAlign='center' mb={4} mt={5} className="animate__animated animate__zoomIn">Comercializacion</Typography>
+      <Typography variant='h3' fontWeight='800' textAlign='center' mb={4} mt={5} className="animate__animated animate__zoomIn">Comercialización</Typography>
 
       <Grid container flexDirection="row" padding={2} spacing={4} className="animate__animated animate__zoomIn">
 
