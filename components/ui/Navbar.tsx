@@ -74,6 +74,11 @@ export const Navbar = () => {
                                 <MenuItem>Otros</MenuItem>
                             </Link>
                         </NextLink>
+                        <NextLink href='/sistema-gestion' passHref>
+                            <Link>
+                                <MenuItem>Sistemas de Gestión: Calidad, Seguridad y Medio Ambiente</MenuItem>
+                            </Link>
+                        </NextLink>
                     </Menu>
 
                     <NextLink href='/articulos' passHref>

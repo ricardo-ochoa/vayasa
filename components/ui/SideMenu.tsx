@@ -52,6 +52,9 @@ export const SideMenu = () => {
                             <ListItem button sx={{ pl: 4 }} onClick={() => navigateTo('/comercializacion')}>
                                 <ListItemText primary="Otros" />
                             </ListItem>
+                            <ListItem button sx={{ pl: 4 }} onClick={() => navigateTo('/sistema-gestion')}>
+                                <ListItemText primary="Sistemas de Gestión: Calidad, Seguridad y Medio Ambiente" />
+                            </ListItem>
                         </List>
                     </Collapse>
 
