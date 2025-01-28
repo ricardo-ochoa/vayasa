@@ -5,9 +5,9 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 import SimpleImageSlider from "react-simple-image-slider";
 
 const images = [
-  {url:  'https://res.cloudinary.com/dsvlqbftn/image/upload/v1705813822/vayasa/slide2consul_g9cohp.jpg'},
-  {url:  'https://res.cloudinary.com/dsvlqbftn/image/upload/v1705813822/vayasa/slide3consul_clmfdj.jpg'},
-  {url:  'https://res.cloudinary.com/dsvlqbftn/image/upload/v1705813821/vayasa/slide1consul_exwzz5.jpg'}
+  {url:  'https://res.cloudinary.com/dsvlqbftn/image/upload/v1705808601/vayasa/slide3_zyjvoo.jpg'},
+  {url:  'https://res.cloudinary.com/dsvlqbftn/image/upload/v1705808602/vayasa/slide2_tk4wka.jpg'},
+  {url:  'https://res.cloudinary.com/dsvlqbftn/image/upload/v1705808601/vayasa/slide1_vq8f6q.jpg'}
 ]
 
 export const Gestion = () => {
