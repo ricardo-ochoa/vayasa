@@ -69,14 +69,14 @@ export const Navbar = () => {
                         </NextLink>
                         {/* <MenuItem onClick={handleCloseMenu}>Seguridad y Salud en el Trabajo</MenuItem>
                         <MenuItem onClick={handleCloseMenu}>Desarrollo Organizacional</MenuItem> */}
-                        <NextLink href='/comercializacion' passHref>
-                            <Link>
-                                <MenuItem>Otros</MenuItem>
-                            </Link>
-                        </NextLink>
                         <NextLink href='/sistema-gestion' passHref>
                             <Link>
                                 <MenuItem>Sistemas de Gestión: Calidad, Seguridad y Medio Ambiente</MenuItem>
+                            </Link>
+                        </NextLink>
+                        <NextLink href='/comercializacion' passHref>
+                            <Link>
+                                <MenuItem>Otros</MenuItem>
                             </Link>
                         </NextLink>
                     </Menu>
