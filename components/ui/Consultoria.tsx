@@ -31,39 +31,48 @@ export const Consultoria = () => {
 </Box>
 
 <Typography variant='h2' fontWeight='800' textAlign='center' lineHeight={isMobile ? '30px!important' : 'auto'} mb={4} mt={5} className="animate__animated animate__zoomIn">
-  Maximización del Valor Económico de Contratos de Obras, Adquisiciones, Arrendamientos y Servicios
+Maximización del Valor Económico de
+Contratos e Integración de Propuestas
+Técnico – Económicas
 </Typography>
 
 <Grid container flexDirection="row" padding={2} spacing={6}>
 
   <Grid item xs={12} md={12} mt={6} className="animate__animated animate__zoomIn">
-    <Typography variant='h4' fontWeight='800' textAlign='center' mb={2} mt={2}>Beneficios</Typography>
+    <Typography variant='h4' fontWeight='800' textAlign='center' mb={2} mt={2}>Nuestro compromiso</Typography>
     <Typography variant='body1' textAlign='center' fontSize='1.3rem' mb={4} mt={2}>
-      Incrementar el patrimonio y la riqueza de nuestros clientes mediante la creación de valor, gestionando, maximizando económicamente y optimizando su contrato; a través de estrategias que velen por sus intereses económicos-jurídicos.
+    Incrementar el patrimonio y la riqueza de nuestros Clientes mediante la creación
+de valor, gestionando, maximizando económicamente y optimizando su contrato; a
+través de estrategias que garanticen el cumplimiento de sus intereses económicos-
+jurídicos.
     </Typography>
   </Grid>
 
   <Grid item xs={12} md={12} mt={6} className="animate__animated animate__zoomIn">
-    <Typography variant='h4' fontWeight='800' textAlign='center' mb={4} mt={0}>Genere riqueza en cada momento</Typography>
-    <CardMedia component="img" src="https://res.cloudinary.com/dnxxkvpiz/image/upload/v1731994728/VAYASA/diagrama_ezhwr7.png" alt="Macroproceso Administración de Contratos" style={{ maxHeight: "90%", maxWidth: "80%", margin: '0 auto' }} />
+    <Typography variant='h4' fontWeight='800' textAlign='center' mb={4} mt={0}>Genere valor en cada momento</Typography>
+    <CardMedia component="img" src="https://res.cloudinary.com/dnxxkvpiz/image/upload/v1746579168/VAYASA/grfica-consultoria_u93nch.png" alt="Genere valor en cada momento" style={{ maxHeight: "90%", maxWidth: "80%", margin: '0 auto' }} />
   </Grid>
 
   <Grid item xs={12} md={12} mt={3} className="animate__animated animate__zoomIn">
     <Typography variant='h6' textAlign='left' fontSize={'1.5rem'} mb={4} mt={2}>
-    Profundizamos en el análisis económico y jurídico, párrafo a párrafo, letra a letra de su contrato vinculando todo con su entorno legal. Esto permite utilizar mecanismos de maximización que usualmente no se encuetran dentro de la gestión típica de contratos.
-    </Typography>
-    <Typography variant='h6' textAlign='left' fontSize={'1.5rem'} mb={4} mt={2}>
-    Ofrecemos una gestión integral y especializada de contratos, basada en un análisis exhaustivo y preventivo que optimiza los aspectos económicos y garantiza el cumplimiento de los marcos legales más exigentes.
+    Profundizamos en el análisis económico y jurídico, párrafo a párrafo, letra a letra de
+su contrato vinculando todo con su entorno legal. Esto permite utilizar
+mecanismos de maximización que usualmente no se encuetran dentro de la gestión
+típica de contratos.
     </Typography>
   </Grid>
 
   <Grid item xs={12} md={12} mt={3} className="animate__animated animate__zoomIn">
     <Typography variant='h4' fontWeight='800' textAlign='center' mb={4} mt={2}>Te tenemos cubierto</Typography>
     <Typography variant='body1' textAlign='left' fontSize={'1.3rem'} mb={4} mt={2}>
-    Nuestro enfoque proactivo en la resolución de conflictos, junto con nuestra experiencia en la negociación y gestión de ajustes de costos y convenios, asegura la maximización del valor para nuestros clientes, minimizando riesgos legales y financieros. Además ponemos a tu disposición 19 herramientas clave en la gestión:
+    Nuestro enfoque proactivo en la resolución de conflictos, junto con nuestra
+experiencia en la negociación y gestión de ajustes de costos y convenios, asegura
+la maximización del valor para nuestros clientes, minimizando riesgos legales y
+financieros. Además ponemos a tu disposición 22 servicios clave en la gestión:
     </Typography>
 
-  <Grid container spacing={4}>
+    <CardMedia component="img" src="https://res.cloudinary.com/dnxxkvpiz/image/upload/v1746579329/VAYASA/cubierto_dellpu.png" alt="Genere valor en cada momento" style={{ maxHeight: "90%", maxWidth: "80%", margin: '0 auto' }} />
+  {/* <Grid container spacing={4}>
     <Grid item xs={12} md={6}>
       <List>
         {[
@@ -110,16 +119,16 @@ export const Consultoria = () => {
         ))}
       </List>
     </Grid>
-  </Grid>
+  </Grid> */}
 
   </Grid>
 
-  <Grid item xs={12} md={12} my={12} className="animate__animated animate__zoomIn">
+  {/* <Grid item xs={12} md={12} my={12} className="animate__animated animate__zoomIn">
     <Typography variant='h6' textAlign='center' fontSize={'2rem'} mb={2} mt={2}>Recuerda que…</Typography>
     <Typography variant='h3' textAlign='center' fontWeight={'800'} fontSize={'2rem'} maxWidth={'600px'} m={'0 auto'}>
       “LA IGNORANCIA DE LA LEY NO EXCUSA SU CUMPLIMIENTO”
     </Typography>
-  </Grid>
+  </Grid> */}
 
 </Grid>
 </Box>
