@@ -86,7 +86,7 @@ todo lo largo y ancho de su organización.
 
   <Grid item xs={12} md={12} mt={6} className="animate__animated animate__zoomIn">
     <Typography variant='h4' fontWeight='800' textAlign='center' mb={4} mt={0}>Hecho a tu medida</Typography>
-    <CardMedia component="img" src="https://res.cloudinary.com/dnxxkvpiz/image/upload/v1737783877/VAYASA/hechoamedida_rjn3a0.png" alt="Hecho a tu medida" style={{ maxHeight: "90%", maxWidth: "80%", margin: '0 auto' }} />
+    <CardMedia component="img" src="https://res.cloudinary.com/dnxxkvpiz/image/upload/v1746638924/VAYASA/diagrama_sistemas_dos_gpv4o8.png" alt="Hecho a tu medida" style={{ maxHeight: "90%", maxWidth: "80%", margin: '0 auto' }} />
   </Grid>
 
   <Grid item xs={12} md={12} mt={3} className="animate__animated animate__zoomIn">
