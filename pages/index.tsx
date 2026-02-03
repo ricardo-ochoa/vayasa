@@ -2,6 +2,7 @@ import type { NextPage } from 'next';
 import Link from 'next/link'; // Importante para la navegación interna
 import { PageLayout } from '../components/layouts/PageLayout';
 import { Contactar } from '../components/ui';
+import Image from 'next/image';
 
 const Home: NextPage = () => {
   return (
@@ -13,10 +14,12 @@ const Home: NextPage = () => {
       
       {/* Contenedor de la imagen al 100% */}
       <div style={{ width: '100%', overflow: 'hidden' }}>
-        <img 
-          src="https://res.cloudinary.com/dnxxkvpiz/image/upload/v1770141750/VAYASA/mainimage_u5qy5x.jpg" 
-          alt="Banner Principal Industrias VAYASA" 
-          style={{ width: '100%', height: 'auto', display: 'block' }}
+        <Image
+          src="https://res.cloudinary.com/dnxxkvpiz/image/upload/v1770141750/VAYASA/mainimage_u5qy5x.jpg"
+          alt="Banner Principal Industrias VAYASA"
+          layout="responsive"
+          width={1920}
+          height={1080}
         />
       </div>
 
