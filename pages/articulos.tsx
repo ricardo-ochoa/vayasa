@@ -49,7 +49,12 @@ export const getStaticProps: GetStaticProps = async () => {
         return post;
     }));
 
-    return { props: { posts: postsWithImages } };
+    return { 
+        props: { 
+            posts: postsWithImages 
+        },
+        revalidate: 14400
+    };
 };
 
 const Articulos: React.FC<ArticulosProps> = ({ posts }) => {

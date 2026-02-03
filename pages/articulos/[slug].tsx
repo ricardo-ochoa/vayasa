@@ -50,7 +50,12 @@ export const getStaticPaths: GetStaticPaths = async () => {
             params: { slug: post.slug },
         }));
 
-    return { paths, fallback: false };
+    return { 
+        paths, 
+        // CAMBIO 1: 'blocking' permite que nuevos artículos se generen 
+        // sin tener que volver a compilar la app.
+        fallback: 'blocking' 
+    };
 };
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
@@ -69,7 +74,11 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
         return { notFound: true };
     }
 
-    return { props: { post } };
+    return { 
+        props: { post },
+        // CAMBIO 2: Se revisará si hay cambios en WordPress cada 60 segundos
+        revalidate: 14400 
+    };
 };
 
 const PostDetail: React.FC<PostProps> = ({ post }) => {
