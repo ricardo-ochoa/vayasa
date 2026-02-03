@@ -3,7 +3,7 @@ import DoneTwoToneIcon from '@mui/icons-material/DoneTwoTone';
 
 export const Nosotros = () => {
   return (
-    <section id='nosotros' >
+    <section id='nosotros'>
       <Grid paddingTop="6rem">
         <Typography variant='h2' textAlign='center' fontWeight='800'>Nosotros</Typography>
       </Grid>

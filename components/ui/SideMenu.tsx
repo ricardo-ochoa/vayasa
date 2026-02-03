@@ -32,16 +32,16 @@ export const SideMenu = () => {
         >
             <Box sx={{ width: 250, paddingTop: 5 }}>
                 <List>
-                    <ListItem button onClick={handleToggleSoluciones}>
+                    {/* <ListItem button onClick={handleToggleSoluciones}>
                         <ListItemIcon>
                             <EngineeringTwoToneIcon />
                         </ListItemIcon>
                         <ListItemText primary={'Soluciones'} />
                         {openSoluciones ? <ExpandLess /> : <ExpandMore />}
-                    </ListItem>
+                    </ListItem> */}
 
                     {/* Submenú de Soluciones */}
-                    <Collapse in={openSoluciones} timeout="auto" unmountOnExit>
+                    {/* <Collapse in={openSoluciones} timeout="auto" unmountOnExit>
                         <List component="div" disablePadding>
                             <ListItem button sx={{ pl: 4 }} onClick={() => navigateTo('/consultoria')}>
                                 <ListItemText primary="Maximización del Valor Económico de tu Contrato" />
@@ -56,7 +56,14 @@ export const SideMenu = () => {
                                 <ListItemText primary="Otros" />
                             </ListItem>
                         </List>
-                    </Collapse>
+                    </Collapse> */}
+
+                    <ListItem button onClick={() => navigateTo('/servicios')}>
+                        <ListItemIcon>
+                            <EngineeringTwoToneIcon />
+                        </ListItemIcon>
+                        <ListItemText primary={'Servicios'} />
+                    </ListItem>
 
                     <ListItem button onClick={() => navigateTo('/articulos')}>
                         <ListItemIcon>

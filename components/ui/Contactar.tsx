@@ -41,7 +41,7 @@ export const Contactar = () => {
         // handleContactUsRedirect();
         return <Grid mt={4}
             mb={10}
-            p={2}
+            p={4}
             container spacing={6}
             width='100%'
             justifyContent='space-between'
@@ -81,18 +81,16 @@ export const Contactar = () => {
     }
 
     return (
-        <Box id='contacto' pt={10} className="animate__animated animate__backInUp solutionContact">
-            <CardMedia component="img" src="https://res.cloudinary.com/dnxxkvpiz/image/upload/v1663620484/VAYASA/contactimg_byevvd.jpg" alt="oil and gas" style={{ height: "300px", width: "100%", objectFit: 'cover' }} />
-
+        <Box id='contacto' pt={10} className="animate__animated animate__backInUp solutionContact flex justify-center align-middle">
+            {/* <CardMedia component="img" src="https://res.cloudinary.com/dnxxkvpiz/image/upload/v1663620484/VAYASA/contactimg_byevvd.jpg" alt="oil and gas" style={{ height: "300px", width: "100%", objectFit: 'cover', padding:"20px" }} /> */}
             <Grid
                 mt={0}
                 mb={10}
-                p={2}
+                p={4}
                 container spacing={6}
-
                 width='100%'
                 justifyContent='space-between'
-                maxWidth='1200px' className='contactinfo'
+                alignItems={"center"}
             >
                 <Grid item
                     xs={12}

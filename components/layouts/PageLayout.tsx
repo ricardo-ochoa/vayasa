@@ -55,7 +55,8 @@ export const PageLayout:FC<Props> = ({ children, title, pageDescription, imageFu
         <main className='main' style={{
             margin:'0 auto',
             marginTop: '70px',
-            maxWidth: '1200px',
+            // maxWidth: '1200px',
+            justifyItems:"center",
             padding: '0',
             color: "#002e8f"
         }}>
