@@ -2,13 +2,6 @@ import { Grid, Typography, List, ListItem, ListItemIcon, ListItemText, Box, Card
 import DoneTwoToneIcon from '@mui/icons-material/DoneTwoTone';
 import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
-import SimpleImageSlider from "react-simple-image-slider";
-
-// const images = [
-//   { url: 'https://res.cloudinary.com/dsvlqbftn/image/upload/v1705813822/vayasa/slide2consul_g9cohp.jpg' },
-//   { url: 'https://res.cloudinary.com/dsvlqbftn/image/upload/v1705813822/vayasa/slide3consul_clmfdj.jpg' },
-//   { url: 'https://res.cloudinary.com/dsvlqbftn/image/upload/v1705813821/vayasa/slide1consul_exwzz5.jpg' }
-// ];
 
 export const Servicios = () => {
   const theme = useTheme();
@@ -54,19 +47,6 @@ export const Servicios = () => {
 
   return (
     <Box id='servicios' sx={{ overflowX: 'hidden' }}>
-      {/* Banner Slider */}
-      {/* <Box height={'100%'} width={'100%'} margin={'0 auto'} sx={{ backgroundColor: '#f5f5f5' }}>
-        <SimpleImageSlider
-          width={'100%'}
-          height={isMobile ? 250 : 500}
-          slideDuration={3}
-          images={images}
-          showBullets={true}
-          showNavs={true}
-          autoPlay={true}
-        />
-      </Box> */}
-
       <Typography 
         variant='h2' 
         fontWeight='800' 
@@ -119,7 +99,7 @@ export const Servicios = () => {
 
       <Box py={8} textAlign="center">
         <Typography variant='h5' fontStyle="italic" color="text.secondary">
-          "Transformamos un evento no deseado en conocimiento organizacional accionable".
+          &quot;Transformamos un evento no deseado en conocimiento organizacional accionable&quot;.
         </Typography>
       </Box>
     </Box>
