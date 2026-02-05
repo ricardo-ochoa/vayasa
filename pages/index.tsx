@@ -15,7 +15,7 @@ const Home: NextPage = () => {
       {/* Contenedor de la imagen al 100% */}
       <div style={{ width: '100%', overflow: 'hidden' }}>
         <Image
-          src="https://res.cloudinary.com/dnxxkvpiz/image/upload/v1770141750/VAYASA/mainimage_u5qy5x.jpg"
+          src="https://res.cloudinary.com/dnxxkvpiz/image/upload/v1770272748/VAYASA/portada_hxdk3x.jpg"
           alt="Banner Principal Industrias VAYASA"
           layout="responsive"
           width={1920}
