@@ -118,12 +118,12 @@ export const Servicios = () => {
                 )}
 
               {imgSrc && (
-                <Grid item xs={12}>
+                <Grid item xs={12} display={"flex"} justifyContent={"center"}>
                   <Box
                     sx={{
                       position: "relative",
-                      width: "100%",
-                      aspectRatio: "16 / 9", // o "4 / 3", "1 / 1"
+                      width: "50%",
+                      aspectRatio: "16 / 9",
                       borderRadius: 1,
                       overflow: "hidden",
                     }}
