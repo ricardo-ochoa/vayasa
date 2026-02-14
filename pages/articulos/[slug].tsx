@@ -88,7 +88,7 @@ const PostDetail: React.FC<PostProps> = ({ post }) => {
             <Container sx={{ my: 14 }}>
                 <Breadcrumbs aria-label="breadcrumb" sx={{ mb: 6 }}>
                     <Link href="/articulos" passHref legacyBehavior>
-                        <Typography color="inherit" component="a">Artículos</Typography>
+                        <Typography color="inherit" component="a">Novedades</Typography>
                     </Link>
                     <Typography color="blue">{post.title.rendered}</Typography>
                 </Breadcrumbs>

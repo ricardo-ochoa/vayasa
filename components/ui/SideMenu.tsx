@@ -69,7 +69,7 @@ export const SideMenu = () => {
                         <ListItemIcon>
                             <DescriptionTwoToneIcon />
                         </ListItemIcon>
-                        <ListItemText primary={'Artículos'} />
+                        <ListItemText primary={'Novedades'} />
                     </ListItem>
 
                     <ListItem button onClick={() => navigateTo('/nosotros')}>

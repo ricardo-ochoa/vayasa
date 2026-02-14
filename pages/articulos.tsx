@@ -69,7 +69,7 @@ const Articulos: React.FC<ArticulosProps> = ({ posts }) => {
             imageFullUrl={'https://res.cloudinary.com/dnxxkvpiz/image/upload/v1663371165/VAYASA/main-banner_avf1f8.jpg'}>
             <Container maxWidth="lg" sx={{ my: 12 }}>
                 <Typography variant="h2" component="h1" gutterBottom mb={4}>
-                    Artículos
+                    Novedades
                 </Typography>
                 <Grid container spacing={4}>
                     {posts.map((post) => (
